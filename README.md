@@ -14,3 +14,4 @@
 ### Midnight Commader
 #### Settings
 - Settings will be stored in the *~/.config/mc/ini*
+- Datetime format - *timeformat_old* (datetime < now - 6 months) and *timeformat_recent* (datetime > now - 6 month). Example of format: `%Y-%m-%d %H:%M`
