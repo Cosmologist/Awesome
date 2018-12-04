@@ -9,7 +9,12 @@
 
 ### Language
 
+#### Extend
+
 [Pre](https://preprocess.io/) - Pre is a PHP preprocessor, designed to make adding new syntax effortless. Flexible integration via Composer.
+
+#### Micro-optimization
+[$array[] = $value vs array_push($array, $value)](https://stackoverflow.com/posts/559859/revisions) - If you use *array_push()* to add one element to the array it's better to use *$array[]* because in that way there is no overhead of calling a function.
 
 # Using
 ## System
