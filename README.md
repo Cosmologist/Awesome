@@ -9,6 +9,10 @@
 
 ### Language
 
+#### Niceties
+
+**The + operator** - Add items from right-hand array to the left-hand array. The right-hand array item will be added only if the left-hand array does not contain suitable key, otherwise the item will be ignored. There is no difference between numeric and non-numeric keys.
+
 #### Extend
 
 [Pre](https://preprocess.io/) - Pre is a PHP preprocessor, designed to make adding new syntax effortless. Flexible integration via Composer.
