@@ -30,7 +30,7 @@ Example: building a config array, where the left-hand array contains only change
 
 ### Midnight Commader
 
-#### RTFM
+#### Resources
 - [Use Midnight Commander like a pro](http://klimer.eu/2015/05/01/use-midnight-commander-like-a-pro/)
 - [Midnight Commander Tips and Tricks](http://www.softpanorama.org/OFM/MC/mc_tips.shtml)
 
