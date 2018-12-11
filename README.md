@@ -3,7 +3,22 @@
 
 ### Concepts
 
-**Promise** - Cпособ возвращения результата и извещения о завершении (успешной или нет) обработки при параллельных вычислениях.
+**Promise** - Cпособ извещения о завершении обработки (успешной или нет) и получения результата обработки при параллельных вычислениях.
+```
+function computeAsync(inputData) {
+  return new Promise(function (resolve, reject) {
+    ... // долгие вычисления
+    
+    if (error) {
+      reject(errorData) // уведомляем что вычисления завершены с ошибкой, можем вернуть дополнительную информацию
+    } else {
+      resolve(someData) // уведомляем что вычисления завершены успешно, можем вернуть дополнительную информацию
+    }
+  }
+)
+...
+computeAsync().then(successComputationCallback, failComputationCallback)
+```
 - [Using_promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises)
 
 ### Code Style
