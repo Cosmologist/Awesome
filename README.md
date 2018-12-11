@@ -1,6 +1,11 @@
 # Developing
 ## Common
 
+### Concepts
+
+**Promise** - Cпособ возвращения результата и извещения о завершении (успешной или нет) обработки при параллельных вычислениях.
+- [Using_promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises)
+
 ### Code Style
 
 [Naming for Adapter Pattern](https://softwareengineering.stackexchange.com/questions/361777/how-to-name-different-components-in-adapter-pattern) - good name option is **FooFromBar** or **FooFromBarAdapter**.  
