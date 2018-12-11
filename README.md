@@ -4,7 +4,7 @@
 ### Concepts
 
 **Promise** - Cпособ извещения о завершении обработки (успешной или нет) и получения результата обработки при параллельных вычислениях.
-```
+```js
 function computeAsync(inputData) {
   return new Promise(function (resolve, reject) {
     ... // долгие вычисления
