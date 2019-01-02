@@ -67,6 +67,11 @@ Example: building a config array, where the left-hand array contains only change
 #### Micro-optimization
 [$array[] = $value vs array_push($array, $value)](https://stackoverflow.com/posts/559859/revisions) - *$array[]* is about two times faster, because there is no overhead of calling a function.
 
+## Web
+### Chrome DevTools
+**Auxiliary Lines** (**Measure**, **Ruler**) - *Settings -> Elements -> Show Rulers*
+
+
 # Using
 ## System
 
