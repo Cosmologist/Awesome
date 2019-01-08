@@ -71,6 +71,8 @@ Example: building a config array, where the left-hand array contains only change
 ### Chrome DevTools
 **Auxiliary Lines** (**Measure**, **Ruler**) - *Settings -> Elements -> Show Rulers*
 
+### JS Libraries
+[Clams.js](https://github.com/josephschmitt/Clamp.js) - Clamps an HTML element by adding ellipsis to it if the content inside is too long.
 
 # Using
 ## System
