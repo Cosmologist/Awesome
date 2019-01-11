@@ -47,6 +47,9 @@ computeAsync().then(successComputationCallback, failComputationCallback)
 
 [Naming for Adapter Pattern](https://softwareengineering.stackexchange.com/questions/361777/how-to-name-different-components-in-adapter-pattern) - good name option is **FooFromBar** or **FooFromBarAdapter**.  
 
+### Resources
+[LibHunt](https://www.libhunt.com/) - Big curruated catalog of useful libraries and resources. It has a convenient ability to compare libraries.
+
 ## PHP
 
 ### Language
