@@ -10,12 +10,15 @@
 - **Method** (**метод**) - функция или процедура в составе объекта.
 - **Coroutine** (**сопрограмма**) - блоки кода (subroutine) которые могут выполняться асинхронно, можно перключаться между ними (сохраняется состояние (контекст) одного блока, вызывается другой, при возврате управления контекст восстанавливается и продолжается выполнение первого). Corutine существуют только внутри одного общего системного потока, другими словами это реализация многозадачности на уровне языка (не операционной системы). Еще хорощий пример - генераторы (yeld).
 
-Links:
-- [What is meant by routines in C++?](https://www.quora.com/What-is-meant-by-routines-in-C++)
-- [What are “routines” in programming?](https://www.quora.com/What-are-%E2%80%9Croutines%E2%80%9D-in-programming)
-- [What's the technical definition for “routine”?](https://stackoverflow.com/posts/6885971/revisions)
-- [Сопрограммы (корутины, coroutine) - что это?](https://ru.stackoverflow.com/questions/496002/%D0%A1%D0%BE%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D1%8B-%D0%BA%D0%BE%D1%80%D1%83%D1%82%D0%B8%D0%BD%D1%8B-coroutine-%D1%87%D1%82%D0%BE-%D1%8D%D1%82%D0%BE )
-- [Coroutine, для чего они нужны?](https://toster.ru/q/405733)
+<details>
+ <summary>More</summary>
+  
+ - [What is meant by routines in C++?](https://www.quora.com/What-is-meant-by-routines-in-C++)
+ - [What are “routines” in programming?](https://www.quora.com/What-are-%E2%80%9Croutines%E2%80%9D-in-programming)
+ - [What's the technical definition for “routine”?](https://stackoverflow.com/posts/6885971/revisions)
+ - [Сопрограммы (корутины, coroutine) - что это?](https://ru.stackoverflow.com/questions/496002/%D0%A1%D0%BE%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D1%8B-%D0%BA%D0%BE%D1%80%D1%83%D1%82%D0%B8%D0%BD%D1%8B-coroutine-%D1%87%D1%82%D0%BE-%D1%8D%D1%82%D0%BE )
+ - [Coroutine, для чего они нужны?](https://toster.ru/q/405733)
+</details>
 
 ### Concepts
 
