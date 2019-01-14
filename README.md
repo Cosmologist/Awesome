@@ -11,7 +11,7 @@
 - **Coroutine** (**сопрограмма**) - блоки кода (subroutine) которые могут выполняться асинхронно, можно перключаться между ними (сохраняется состояние (контекст) одного блока, вызывается другой, при возврате управления контекст восстанавливается и продолжается выполнение первого). Corutine существуют только внутри одного общего системного потока, другими словами это реализация многозадачности на уровне языка (не операционной системы). Еще хорощий пример - генераторы (yeld).
 
 <details>
- <summary>More</summary>
+ <summary>See also</summary>
   
  - [What is meant by routines in C++?](https://www.quora.com/What-is-meant-by-routines-in-C++)
  - [What are “routines” in programming?](https://www.quora.com/What-are-%E2%80%9Croutines%E2%80%9D-in-programming)
