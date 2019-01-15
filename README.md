@@ -62,32 +62,37 @@ computeAsync().then(successComputationCallback, failComputationCallback)
 [marcelgsantos/learning-oop-in-php](https://github.com/marcelgsantos/learning-oop-in-php) - A collection of resources to learn object-oriented programming and related concepts for PHP developers.
 
 ### Language
-**The + operator** - Add items from right-hand array to the left-hand array. The right-hand array item will be added only if the left-hand array does not contain suitable key, otherwise the item will be ignored. There is no difference between numeric and non-numeric keys.
-Example: building a config array, where the left-hand array contains only changed parameters, and the right-hand array contains all possible parameters with default values.
+**The + operator** - Add items from right-hand array to the left-hand array.
+<details>
+ 
+The right-hand array item will be added only if the left-hand array does not contain suitable key, otherwise the item will be ignored. There is no difference between numeric and non-numeric keys.
+**Example**: building a config array, where the left-hand array contains only changed parameters, and the right-hand array contains all possible parameters with default values.
+</details>
 
 #### Micro-optimization
 [$array[] = $value vs array_push($array, $value)](https://stackoverflow.com/posts/559859/revisions) - *$array[]* is about two times faster, because there is no overhead of calling a function.
 
-
 ### Libraries
 [Pre](https://preprocess.io/) - Pre is a PHP preprocessor, designed to make adding new syntax effortless. Flexible integration via Composer.
 
-
-
 ## Web
-### Chrome DevTools
+**Chrome DevTools**
+<details>
+ 
+ ### Useful settings
 **Auxiliary Lines** (**Measure**, **Ruler**) - *Settings -> Elements -> Show Rulers*
+ </details>
 
 ### JS Libraries
 [Clams.js](https://github.com/josephschmitt/Clamp.js) - Clamps an HTML element by adding ellipsis to it if the content inside is too long.
 
-# Using
-## System
-### Utilites
+# User expirience
+## System Utilites
 
 [htop](https://www.systutorials.com/docs/linux/man/1-htop/) is intuitive and powerful interactive process viewer.
 
 [strace](https://strace.io/) is Linux utility to monitor and tamper with interactions between processes and the Linux kernel (system calls, signal deliveries, and changes of process state).
+
 <details>
  
 ##### Simple usage examples:
@@ -104,7 +109,6 @@ strace -e trace=memory
 ##### Resources
 - [The ultimate strace cheat sheet](https://linux-audit.com/the-ultimate-strace-cheat-sheet/)
 </details>
-
 
 **Midnight Commader** is a powerfult text user-interface file manager
 <details>
