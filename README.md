@@ -1,7 +1,5 @@
 # Developing
-## Common
-
-### Terms
+## Terms
 
 **Routine, Subroutine, Function, Procedure, Method, Coroutine**
 <details>
@@ -21,7 +19,7 @@ Links:
  - [Coroutine, для чего они нужны?](https://toster.ru/q/405733)
 </details>
 
-### Concepts
+## Concepts
 
 [Функциональный интерфейс](https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html) (**Functional Interfaces**, **SAM (Single Abstract Method) Interfaces** - интерфейс который содержит **только один метод**.
 
@@ -50,18 +48,18 @@ computeAsync().then(successComputationCallback, failComputationCallback)
 - [Using_promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises)
 </details>  
 
-### Code Style
+## Code Style
 
 [Naming for Adapter Pattern](https://softwareengineering.stackexchange.com/questions/361777/how-to-name-different-components-in-adapter-pattern) - good name option is **FooFromBar** or **FooFromBarAdapter**.  
 
-### Resources
+## Resources
 [LibHunt](https://www.libhunt.com/) - Big curruated catalog of useful libraries and resources. It has a convenient ability to compare libraries.
 
-## PHP
-### Resources
+# PHP Developing
+## Resources
 [marcelgsantos/learning-oop-in-php](https://github.com/marcelgsantos/learning-oop-in-php) - A collection of resources to learn object-oriented programming and related concepts for PHP developers.
 
-### Language
+## Language
 **The + operator** - Add items from right-hand array to the left-hand array.
 <details>
  
@@ -69,24 +67,24 @@ The right-hand array item will be added only if the left-hand array does not con
 **Example**: building a config array, where the left-hand array contains only changed parameters, and the right-hand array contains all possible parameters with default values.
 </details>
 
-#### Micro-optimization
+## Performance
 [$array[] = $value vs array_push($array, $value)](https://stackoverflow.com/posts/559859/revisions) - *$array[]* is about two times faster, because there is no overhead of calling a function.
 
-### Libraries
+## Libraries
 [Pre](https://preprocess.io/) - Pre is a PHP preprocessor, designed to make adding new syntax effortless. Flexible integration via Composer.
 
-## Web
+# Web Developing
 **Chrome DevTools**
 <details>
  
- ### Useful settings
+ ## Useful settings
 **Auxiliary Lines** (**Measure**, **Ruler**) - *Settings -> Elements -> Show Rulers*
  </details>
 
-### JS Libraries
+## JS Libraries
 [Clams.js](https://github.com/josephschmitt/Clamp.js) - Clamps an HTML element by adding ellipsis to it if the content inside is too long.
 
-# User expirience
+# User experience
 ## System Utilites
 
 [htop](https://www.systutorials.com/docs/linux/man/1-htop/) is intuitive and powerful interactive process viewer.
@@ -95,7 +93,7 @@ The right-hand array item will be added only if the left-hand array does not con
 
 <details>
  
-##### Simple usage examples:
+**Examples**
 ```
 # Monitoring file activity
 strace -p process-pid
@@ -106,18 +104,18 @@ strace -e trace=network
 # Monitoring memory calls
 strace -e trace=memory
 ```
-##### Resources
+**Resources**
 - [The ultimate strace cheat sheet](https://linux-audit.com/the-ultimate-strace-cheat-sheet/)
 </details>
 
 **Midnight Commader** is a powerfult text user-interface file manager
 <details>
  
-#### Resources
+**Resources**
 - [Use Midnight Commander like a pro](http://klimer.eu/2015/05/01/use-midnight-commander-like-a-pro/)
 - [Midnight Commander Tips and Tricks](http://www.softpanorama.org/OFM/MC/mc_tips.shtml)
 
-#### Settings
+**Settings**
 - Settings will be stored in the *~/.config/mc/ini*
 - Datetime format option names are *timeformat_old* (datetime < now - 6 months) and *timeformat_recent* (datetime > now - 6 month). Example of format: `%Y-%m-%d %H:%M`
 </details>
