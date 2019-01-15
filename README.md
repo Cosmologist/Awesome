@@ -35,7 +35,7 @@ computeAsync().then(successComputationCallback, failComputationCallback)
 
 [Naming for Adapter Pattern](https://softwareengineering.stackexchange.com/questions/361777/how-to-name-different-components-in-adapter-pattern) - good name option is **FooFromBar** or **FooFromBarAdapter**.  
 
-**Routine, Subroutine, Function, Procedure, Method, Coroutine**
+**Terms Routine, Subroutine, Function, Procedure, Method, Coroutine**
 <details>
 
 - **Routine** (**программа**) - общее название блока кода. Программа, библиотека, модуль, процедура, функция и тп.
@@ -72,7 +72,9 @@ The right-hand array item will be added only if the left-hand array does not con
 ## Libraries
 [Awesome PHP](https://php.libhunt.com/) A curated list of awesome PHP libraries and resources
 
-[Pre](https://preprocess.io/) - Pre is a PHP preprocessor, designed to make adding new syntax effortless. Flexible integration via Composer.
+[Pre](https://preprocess.io/) - Pre is a PHP preprocessor, designed to make adding new syntax effortless. Flexible integration via Composer
+
+[Stringy](https://github.com/danielstjules/Stringy) A PHP string manipulation library with multibyte support
 
 # Web Developing
 **Chrome DevTools**
