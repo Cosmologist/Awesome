@@ -22,9 +22,14 @@
 ### Concepts
 
 **Функциональный интерфейс** (**Functional Interfaces**, **SAM (Single Abstract Method) Interfaces** - интерфейс который содержит **только один метод**.
+<details>
+ 
 - https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html
+</details>
 
 **Promise** - Cпособ извещения о завершении обработки (успешной или нет) и получения результата обработки при параллельных вычислениях.
+<details>
+ 
 ```js
 function computeAsync(inputData) {
   return new Promise(function (resolve, reject) {
@@ -45,6 +50,7 @@ function computeAsync(inputData) {
 computeAsync().then(successComputationCallback, failComputationCallback)
 ```
 - [Using_promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises)
+</details>
 
 ### Code Style
 
