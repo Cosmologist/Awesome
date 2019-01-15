@@ -2,8 +2,10 @@
 ## Common
 
 ### Terms
-<details>
+
 **Routine, Subroutine, Function, Procedure, Method, Coroutine**
+<details>
+
 - **Routine** (**программа**) - общее название блока кода. Программа, библиотека, модуль, процедура, функция и тп.
 - **Subroutine** (**подпрограмма**) - блок кода находящийся внутри другого блока кода.
 - **Function** (**функция**) - блок кода (subroutine) который умеет возвращать данные.
@@ -21,11 +23,7 @@ Links:
 
 ### Concepts
 
-**Функциональный интерфейс** (**Functional Interfaces**, **SAM (Single Abstract Method) Interfaces** - интерфейс который содержит **только один метод**.
-<details>
- 
-- https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html
-</details>
+[Функциональный интерфейс](https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html) (**Functional Interfaces**, **SAM (Single Abstract Method) Interfaces** - интерфейс который содержит **только один метод**.
 
 **Promise** - Cпособ извещения о завершении обработки (успешной или нет) и получения результата обработки при параллельных вычислениях.
 <details>
@@ -50,7 +48,7 @@ function computeAsync(inputData) {
 computeAsync().then(successComputationCallback, failComputationCallback)
 ```
 - [Using_promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises)
-</details>
+</details>  
 
 ### Code Style
 
