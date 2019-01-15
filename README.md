@@ -105,6 +105,7 @@ strace -e trace=memory
 - [The ultimate strace cheat sheet](https://linux-audit.com/the-ultimate-strace-cheat-sheet/)
 </details>
 
+
 **Midnight Commader** is a powerfult text user-interface file manager
 <details>
  
