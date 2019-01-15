@@ -84,11 +84,12 @@ Example: building a config array, where the left-hand array contains only change
 # Using
 ## System
 ### Utilites
+
 [htop](https://www.systutorials.com/docs/linux/man/1-htop/) is intuitive and powerful interactive process viewer.
 
-#### Strace
-[strace](https://strace.io/) is a diagnostic, debugging and instructional userspace utility for Linux. It is used to monitor and tamper with interactions between processes and the Linux kernel, which include system calls, signal deliveries, and changes of process state.
-
+[strace](https://strace.io/) is Linux utility to monitor and tamper with interactions between processes and the Linux kernel (system calls, signal deliveries, and changes of process state).
+<details>
+ 
 ##### Simple usage examples:
 ```
 # Monitoring file activity
@@ -100,9 +101,9 @@ strace -e trace=network
 # Monitoring memory calls
 strace -e trace=memory
 ```
-
 ##### Resources
 - [The ultimate strace cheat sheet](https://linux-audit.com/the-ultimate-strace-cheat-sheet/)
+</details>
 
 ### Midnight Commader
 #### Resources
