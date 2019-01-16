@@ -75,6 +75,10 @@ The right-hand array item will be added only if the left-hand array does not con
 - [danielstjules/Stringy](https://github.com/danielstjules/Stringy) A PHP string manipulation library with multibyte support
 - [Pre](https://preprocess.io/) - Pre is a PHP preprocessor, designed to make adding new syntax effortless. Flexible integration via Composer
 
+# Symfony Developing
+## Libraries
+- [Incenteev/hashed-asset-bundle](https://github.com/Incenteev/hashed-asset-bundle) Apply an asset version based on a hash of the asset for symfony/asset
+
 # Web Developing
 **Chrome DevTools**
 <details>
