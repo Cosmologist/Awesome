@@ -35,7 +35,7 @@ computeAsync().then(successComputationCallback, failComputationCallback)
 
 [Naming for Adapter Pattern](https://softwareengineering.stackexchange.com/questions/361777/how-to-name-different-components-in-adapter-pattern) - good name option is **FooFromBar** or **FooFromBarAdapter**.  
 
-**Terms Routine, Subroutine, Function, Procedure, Method, Coroutine**
+Terms **Routine**, **Subroutine**, **Function**, **Procedure**, **Method**, **Coroutine**
 <details>
 
 - **Routine** (**программа**) - общее название блока кода. Программа, библиотека, модуль, процедура, функция и тп.
