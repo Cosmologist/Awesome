@@ -97,7 +97,7 @@ The right-hand array item will be added only if the left-hand array does not con
   
 [Midnight Commader](http://midnight-commander.org) is a powerfult text user-interface file manager
 <details>
- 
+
 **Resources**
 - [Use Midnight Commander like a pro](http://klimer.eu/2015/05/01/use-midnight-commander-like-a-pro/)
 - [Midnight Commander Tips and Tricks](http://www.softpanorama.org/OFM/MC/mc_tips.shtml)
@@ -107,11 +107,11 @@ The right-hand array item will be added only if the left-hand array does not con
 - Datetime format option names are *timeformat_old* (datetime < now - 6 months) and *timeformat_recent* (datetime > now - 6 month). Example of format: `%Y-%m-%d %H:%M`
 </details>
 
+
 [strace](https://strace.io/) is Linux utility to monitor and tamper with interactions between processes and the Linux kernel (system calls, signal deliveries, and changes of process state).
 
 <details>
- <summary>More</summary>
- 
+
 **Examples**
 ```
 # Monitoring file activity
