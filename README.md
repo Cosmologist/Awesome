@@ -71,10 +71,11 @@ The right-hand array item will be added only if the left-hand array does not con
 
 ## Libraries
 [Awesome PHP](https://php.libhunt.com/) A curated list of awesome PHP libraries and resources
+[nette/utils](https://github.com/nette/utils) Lightweight utilities for string & array manipulation, image handling, safe JSON encoding/decoding, validation, slug or strong password generating etc
 
 [Pre](https://preprocess.io/) - Pre is a PHP preprocessor, designed to make adding new syntax effortless. Flexible integration via Composer
 
-[Stringy](https://github.com/danielstjules/Stringy) A PHP string manipulation library with multibyte support
+[danielstjules/Stringy](https://github.com/danielstjules/Stringy) A PHP string manipulation library with multibyte support
 
 # Web Developing
 **Chrome DevTools**
