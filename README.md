@@ -70,12 +70,10 @@ The right-hand array item will be added only if the left-hand array does not con
 [$array[] = $value vs array_push($array, $value)](https://stackoverflow.com/posts/559859/revisions) - *$array[]* is about two times faster, because there is no overhead of calling a function.
 
 ## Libraries
-[Awesome PHP](https://php.libhunt.com/) A curated list of awesome PHP libraries and resources
-[nette/utils](https://github.com/nette/utils) Lightweight utilities for string & array manipulation, image handling, safe JSON encoding/decoding, validation, slug or strong password generating etc
-
-[Pre](https://preprocess.io/) - Pre is a PHP preprocessor, designed to make adding new syntax effortless. Flexible integration via Composer
-
-[danielstjules/Stringy](https://github.com/danielstjules/Stringy) A PHP string manipulation library with multibyte support
+- [Awesome PHP](https://php.libhunt.com/) A curated list of awesome PHP libraries and resources
+- [nette/utils](https://github.com/nette/utils) Lightweight utilities for string & array manipulation, image handling, safe JSON encoding/decoding, validation, slug or strong password generating etc
+- [danielstjules/Stringy](https://github.com/danielstjules/Stringy) A PHP string manipulation library with multibyte support
+- [Pre](https://preprocess.io/) - Pre is a PHP preprocessor, designed to make adding new syntax effortless. Flexible integration via Composer
 
 # Web Developing
 **Chrome DevTools**
