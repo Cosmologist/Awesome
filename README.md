@@ -90,7 +90,7 @@ The right-hand array item will be added only if the left-hand array does not con
 ## JS Libraries
 [Clams.js](https://github.com/josephschmitt/Clamp.js) - Clamps an HTML element by adding ellipsis to it if the content inside is too long.
 
-# User experience
+# Workspace
 ## System Utilites
 
 [htop](https://www.systutorials.com/docs/linux/man/1-htop/) is intuitive and powerful interactive process viewer.
@@ -125,3 +125,10 @@ strace -e trace=memory
 - Settings will be stored in the *~/.config/mc/ini*
 - Datetime format option names are *timeformat_old* (datetime < now - 6 months) and *timeformat_recent* (datetime > now - 6 month). Example of format: `%Y-%m-%d %H:%M`
 </details>
+
+### Receipts
+<details><summary>Какие порты доступны для исходящих соединений</summary>
+ 
+Проверить доступ к порту можно следующим образом: `telnet portquiz.net 80` ([portquiz.net](portquiz.net) - публичный сервер на котором открыты все TCP-порты).  
+Получить список всех портов можно с помощью nmap: `nmap IP` или только по первым 100 списка популярных портов `nmap --top-ports 100 IP`
+ </details>
