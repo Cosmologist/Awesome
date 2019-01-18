@@ -1,3 +1,21 @@
+- [Developing](#developing)
+  - [Resources](#resources)
+  - [Concepts](#concepts)
+  - [Misc](#misc)
+- [PHP Developing](#php-developing)
+  - [Resources](#resources-1)
+  - [Language](#language)
+  - [Performance](#performance)
+  - [Libraries](#libraries)
+- [Symfony Developing](#symfony-developing)
+  - [Libraries](#libraries-1)
+- [Web Developing](#web-developing)
+  - [Chrome DevTools](#chrome-devtools)
+  - [JS Libraries](#js-libraries)
+- [Workspace](#workspace)
+  - [Utilities](#utilites)
+  - [Receipts](#receipts)
+
 # Developing
 
 ## Resources
@@ -80,7 +98,7 @@ The right-hand array item will be added only if the left-hand array does not con
 - [Incenteev/hashed-asset-bundle](https://github.com/Incenteev/hashed-asset-bundle) Apply an asset version based on a hash of the asset for symfony/asset
 
 # Web Developing
-**Chrome DevTools**
+## Chrome DevTools
 <details>
  
  ## Useful settings
@@ -91,7 +109,7 @@ The right-hand array item will be added only if the left-hand array does not con
 [Clams.js](https://github.com/josephschmitt/Clamp.js) - Clamps an HTML element by adding ellipsis to it if the content inside is too long.
 
 # Workspace
-## System Utilites
+## Utilites
 
 [htop](https://www.systutorials.com/docs/linux/man/1-htop/) is intuitive and powerful interactive process viewer
   
