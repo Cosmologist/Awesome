@@ -3,7 +3,7 @@
   - [Concepts](#concepts)
   - [Misc](#misc)
 - [PHP Developing](#php-developing)
-  - [Envirionment](#envirionment)
+  - [Environment](#environment)
   - [Resources](#resources-1)
   - [Language](#language)
   - [Performance](#performance)
@@ -72,7 +72,7 @@ Links:
 ## Resources
 [marcelgsantos/learning-oop-in-php](https://github.com/marcelgsantos/learning-oop-in-php) - A collection of resources to learn object-oriented programming and related concepts for PHP developers.
 
-## Envirionment
+## Environment
 ### CGI, FastCGI, PHP-FPM
 **CGI** - устаревший протокол взаимодействия между веб-сервером и приложениями (скриптами), общение ведется только через STDIN/STDOUT, на каждый запрос создается отдельный процесс приложения, который умирает после ответа.  
 **FastCGI** - общение ведется через сокеты или TCP (что дает возможность разнести сервер и приложение), предполагается наличие FastCGI-менеджера, который заранее подготоваливает пул процессов приложения, что позволяет значительно быстрее отдать запрос на обработку. Реализация FastCGI-менеджера может быть встроена в сервер (Apache) или нет (Nginx).  
