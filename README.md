@@ -14,7 +14,8 @@
   - [Chrome DevTools](#chrome-devtools)
   - [JS Libraries](#js-libraries)
 - [Development Environment](#development-environment)
-  - [Databases](#databases)
+  - [Database](#database)
+  - [MySQL Database](#mysql-database)
 - [Workspace](#workspace)
   - [Utilities](#utilites)
   - [Receipts](#receipts)
@@ -113,11 +114,14 @@ The right-hand array item will be added only if the left-hand array does not con
 [Clams.js](https://github.com/josephschmitt/Clamp.js) - Clamps an HTML element by adding ellipsis to it if the content inside is too long.
 
 # Development Environment
-## Databases
+## Database
 
 ### Storing Files in a Database
 [Question at the Ask TOM (The Oracle Masters)](https://asktom.oracle.com/pls/apex/f?p=100:11:0%3A%3A%3A%3AP11_QUESTION_ID:1011065100346196442)
 > **I know of no advantages to storing data I want to keep for a long time outside of a database.** If it is in the database. I can be sure it is professionally managed, backed up, recoverable (with the rest of the data), secured, scalable (try putting 100,000 documents in a single directory, now, put them in table - which one 'scales' - it is not the directory). I can undelete (flashback) easily. I have locking. I have read consistency.
+
+## MySQL Database
+[MySQL Workbench](http://dev.mysql.com/doc/workbench/en) is a graphical tool for working with MySQL servers and databases. Better solution to adminstrate MySQL! And good solution to manage data.
 
 # Workspace
 ## Utilites
