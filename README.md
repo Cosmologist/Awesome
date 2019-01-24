@@ -1,23 +1,23 @@
-- [Developing](#developing)
+- [Development](#development)
   - [Resources](#resources)
   - [Concepts](#concepts)
   - [Misc](#misc)
-- [PHP Developing](#php-developing)
+- [PHP Development](#php-development)
   - [Environment](#environment)
   - [Resources](#resources-1)
   - [Language](#language)
   - [Performance](#performance)
   - [Libraries](#libraries)
-- [Symfony Developing](#symfony-developing)
+- [Symfony Development](#symfony-development)
   - [Libraries](#libraries-1)
-- [Web Developing](#web-developing)
+- [Web Development](#web-development)
   - [Chrome DevTools](#chrome-devtools)
   - [JS Libraries](#js-libraries)
 - [Workspace](#workspace)
   - [Utilities](#utilites)
   - [Receipts](#receipts)
 
-# Developing
+# Development
 
 ## Resources
 [LibHunt](https://www.libhunt.com/) - Big curruated catalog of useful libraries and resources. It has a convenient ability to compare libraries.
@@ -68,7 +68,7 @@ Links:
  - [Coroutine, для чего они нужны?](https://toster.ru/q/405733)
 
 
-# PHP Developing
+# PHP Development
 ## Resources
 [marcelgsantos/learning-oop-in-php](https://github.com/marcelgsantos/learning-oop-in-php) - A collection of resources to learn object-oriented programming and related concepts for PHP developers.
 
@@ -97,11 +97,11 @@ The right-hand array item will be added only if the left-hand array does not con
 - [danielstjules/Stringy](https://github.com/danielstjules/Stringy) A PHP string manipulation library with multibyte support
 - [Pre](https://preprocess.io/) - Pre is a PHP preprocessor, designed to make adding new syntax effortless. Flexible integration via Composer
 
-# Symfony Developing
+# Symfony Development
 ## Libraries
 - [Incenteev/hashed-asset-bundle](https://github.com/Incenteev/hashed-asset-bundle) Apply an asset version based on a hash of the asset for symfony/asset
 
-# Web Developing
+# Web Development
 ## Chrome DevTools
  
 ### Useful settings
