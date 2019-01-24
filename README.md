@@ -76,9 +76,9 @@ Links:
 [marcelgsantos/learning-oop-in-php](https://github.com/marcelgsantos/learning-oop-in-php) - A collection of resources to learn object-oriented programming and related concepts for PHP developers.
 
 ## Language
-**The + operator** - Add items from right-hand array to the left-hand array.
- 
-The right-hand array item will be added only if the left-hand array does not contain suitable key, otherwise the item will be ignored. There is no difference between numeric and non-numeric keys.
+
+### The + operator
+Adds items from right-hand array to the left-hand array, only the keys of which are missing in the left-hand array (associative or indexed keys).  
 **Example**: building a config array, where the left-hand array contains only changed parameters, and the right-hand array contains all possible parameters with default values.
 
 ## Environment
