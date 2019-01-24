@@ -121,7 +121,7 @@ The right-hand array item will be added only if the left-hand array does not con
 > **I know of no advantages to storing data I want to keep for a long time outside of a database.** If it is in the database. I can be sure it is professionally managed, backed up, recoverable (with the rest of the data), secured, scalable (try putting 100,000 documents in a single directory, now, put them in table - which one 'scales' - it is not the directory). I can undelete (flashback) easily. I have locking. I have read consistency.
 
 ## MySQL Database
-[MySQL Workbench](http://dev.mysql.com/doc/workbench/en) is a graphical tool for working with MySQL servers and databases. Better solution to adminstrate MySQL! And good solution to manage data.
+The best UI-solution to MySQL administration! And a good data management solution.
 
 # Workspace
 ## Utilites
