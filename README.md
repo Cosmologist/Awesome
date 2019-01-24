@@ -1,13 +1,13 @@
 - [Development](#development)
   - [Resources](#resources)
-  - [Concepts](#concepts)
+  - [Constructs](#constructs)
   - [Misc](#misc)
 - [PHP Development](#php-development)
-  - [Environment](#environment)
   - [Resources](#resources-1)
   - [Language](#language)
-  - [Performance](#performance)
+  - [Environment](#environment)
   - [Libraries](#libraries)
+  - [Performance](#performance)
 - [Symfony Development](#symfony-development)
   - [Libraries](#libraries-1)
 - [Web Development](#web-development)
@@ -25,7 +25,7 @@
 ## Resources
 [LibHunt](https://www.libhunt.com/) - Big curruated catalog of useful libraries and resources. It has a convenient ability to compare libraries.
 
-## Concepts
+## Constructs
 [Функциональный интерфейс](https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html) (**Functional Interfaces**, **SAM (Single Abstract Method) Interfaces** - интерфейс который содержит **только один метод**.
 
 **Promise** - Cпособ извещения о завершении обработки (успешной или нет) и получения результата обработки при параллельных вычислениях.
@@ -75,6 +75,12 @@ Links:
 ## Resources
 [marcelgsantos/learning-oop-in-php](https://github.com/marcelgsantos/learning-oop-in-php) - A collection of resources to learn object-oriented programming and related concepts for PHP developers.
 
+## Language
+**The + operator** - Add items from right-hand array to the left-hand array.
+ 
+The right-hand array item will be added only if the left-hand array does not contain suitable key, otherwise the item will be ignored. There is no difference between numeric and non-numeric keys.
+**Example**: building a config array, where the left-hand array contains only changed parameters, and the right-hand array contains all possible parameters with default values.
+
 ## Environment
 ### CGI, FastCGI, PHP-FPM
 **CGI** - устаревший протокол взаимодействия между веб-сервером и приложениями (скриптами), общение ведется только через STDIN/STDOUT, на каждый запрос создается отдельный процесс приложения, который умирает после ответа.  
@@ -85,20 +91,14 @@ Links:
 Links:
  - [PHP-FPM, application server made by PHP](https://publications.jbfavre.org/web/php-fpm-apps-server-nginx.en)
 
-## Language
-**The + operator** - Add items from right-hand array to the left-hand array.
- 
-The right-hand array item will be added only if the left-hand array does not contain suitable key, otherwise the item will be ignored. There is no difference between numeric and non-numeric keys.
-**Example**: building a config array, where the left-hand array contains only changed parameters, and the right-hand array contains all possible parameters with default values.
-
-## Performance
-[$array[] = $value vs array_push($array, $value)](https://stackoverflow.com/posts/559859/revisions) - *$array[]* is about two times faster, because there is no overhead of calling a function.
-
 ## Libraries
 - [Awesome PHP](https://php.libhunt.com/) A curated list of awesome PHP libraries and resources
 - [nette/utils](https://github.com/nette/utils) Lightweight utilities for string & array manipulation, image handling, safe JSON encoding/decoding, validation, slug or strong password generating etc
 - [danielstjules/Stringy](https://github.com/danielstjules/Stringy) A PHP string manipulation library with multibyte support
 - [Pre](https://preprocess.io/) - Pre is a PHP preprocessor, designed to make adding new syntax effortless. Flexible integration via Composer
+
+## Performance
+[$array[] = $value vs array_push($array, $value)](https://stackoverflow.com/posts/559859/revisions) - *$array[]* is about two times faster, because there is no overhead of calling a function.
 
 # Symfony Development
 ## Libraries
