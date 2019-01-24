@@ -97,7 +97,7 @@ Links:
 Adds items from right-hand array to the left-hand array, only the keys of which are missing in the left-hand array (associative or indexed keys).  
 **Example**: building a config array, where the left-hand array contains only changed parameters, and the right-hand array contains all possible parameters with default values.
 
-### *$array[] = $value* vs *array_push($array, $value)*
+### *$array[]* vs *array_push*
 *$array[]* is about [two times faster](https://stackoverflow.com/posts/559859/revisions), because there is no overhead of calling a function.
 
 # Symfony Development
