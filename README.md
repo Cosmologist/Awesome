@@ -141,7 +141,7 @@ Run ```go run hello.go``` or compile and run ```go build hello.go && ./hello```
 > [I know of no advantages to storing data I want to keep for a long time outside of a database.](https://asktom.oracle.com/pls/apex/f?p=100:11:0%3A%3A%3A%3AP11_QUESTION_ID:1011065100346196442) If it is in the database. I can be sure it is professionally managed, backed up, recoverable (with the rest of the data), secured, scalable (try putting 100,000 documents in a single directory, now, put them in table - which one 'scales' - it is not the directory). I can undelete (flashback) easily. I have locking. I have read consistency.
 
 ## MySQL Database
-The best UI-solution to MySQL administration! And a good data management solution.
+[MySQL Workbench](https://www.mysql.com/products/workbench/) The best UI-solution to MySQL administration! And a good data management solution.
 
 # Data Processing
 ## Concepts
