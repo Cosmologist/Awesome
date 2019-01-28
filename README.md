@@ -12,6 +12,8 @@
 - [Web Development](#web-development)
   - [Chrome DevTools](#chrome-devtools)
   - [JS Libraries](#js-libraries)
+- [Various Languages - Fast Start](#various-languages-fast-start)
+  - [Go](#go)
 - [Development Environment](#development-environment)
   - [Database](#database)
   - [MySQL Database](#mysql-database)
@@ -115,6 +117,22 @@ Adds items from right-hand array to the left-hand array, only the keys of which 
 
 ## JS Libraries
 [Clams.js](https://github.com/josephschmitt/Clamp.js) - Clamps an HTML element by adding ellipsis to it if the content inside is too long.
+
+## Various Languages - Fast Start
+
+### Go
+#### Most Simplified Program
+```go
+package main
+
+import "fmt"
+
+func main() {
+    fmt.Println("hello world")
+}
+```
+#### Execution
+Run ```go run hello.go``` or compile and run ```go build hello.go && ./hello```
 
 # Development Environment
 ## Database
