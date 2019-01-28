@@ -120,7 +120,7 @@ Adds items from right-hand array to the left-hand array, only the keys of which 
 
 ## Various Languages - Fast Start
 
-### Go
+### Go (Golang)
 #### Most Simplified Program
 ```go
 package main
