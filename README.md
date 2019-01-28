@@ -12,7 +12,7 @@
 - [Web Development](#web-development)
   - [Chrome DevTools](#chrome-devtools)
   - [JS Libraries](#js-libraries)
-- [Various Languages - Fast Start](#various-languages-fast-start)
+- [Various Languages - Fast Start](#various-languages---fast-start)
   - [Go](#go)
 - [Development Environment](#development-environment)
   - [Database](#database)
