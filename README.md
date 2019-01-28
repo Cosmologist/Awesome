@@ -13,7 +13,7 @@
   - [Chrome DevTools](#chrome-devtools)
   - [JS Libraries](#js-libraries)
 - [Various Languages - Fast Start](#various-languages---fast-start)
-  - [Go](#go)
+  - [Go (Golang)](#go-golang)
 - [Development Environment](#development-environment)
   - [Database](#database)
   - [MySQL Database](#mysql-database)
