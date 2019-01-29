@@ -95,6 +95,16 @@ Links:
 
 Links:
  - [PHP-FPM, application server made by PHP](https://publications.jbfavre.org/web/php-fpm-apps-server-nginx.en)
+ 
+### Нативные типы значений, вместо только строковых, в результатах запросах к MySQL через PDO
+MySQL должен передавать данные без изменений, по бинарному протоколу, так как PDО не знает их исходный тип.
+Бинарный протокол доступен только при работе с подготовленными выражениями, которые PDO по-умолчанию эмулирует.
+```php
+// Отключаем эмуляцию
+$pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
+// Для PDO дополнительно нужно
+$pdo->setAttribute(PDO::ATTR_STRINGIFY_FETCHES, false);
+```
 
 ## Nuances
 
