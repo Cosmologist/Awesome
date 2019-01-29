@@ -143,6 +143,16 @@ Run ```go run hello.go``` or compile and run ```go build hello.go && ./hello```
 ## MySQL Database
 [MySQL Workbench](https://www.mysql.com/products/workbench/) The best UI-solution to MySQL administration! And a good data management solution.
 
+### Текстовый и бинарный протоколы
+Текстовый протокол оперирует текстовыми данными, бинарный текстовыми и числовыми.  
+Бинарный протокол более эффективен так как:
+- данные, которыми происходит обмен, эффективней упакованы (занимают меньше места)
+- уменьшает количество операций по приведению типов на сервере и восстановлению (опционально) типов на клиенте
+**Важно:** MySQL позволяет использовать бинарный протокол только для при работе с prepared statements.
+
+- [https://dev.mysql.com/doc/internals/en/binary-protocol-value.html]
+- High Performance MySQL, O'Relly, read from page #225
+
 # Data Processing
 ## Concepts
 
