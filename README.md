@@ -161,7 +161,7 @@ Run ```go run hello.go``` or compile and run ```go build hello.go && ./hello```
 **Важно:** MySQL позволяет использовать бинарный протокол только для при работе с prepared statements.
 
 - [https://dev.mysql.com/doc/internals/en/binary-protocol-value.html]
-- High Performance MySQL, O'Relly, read from page #225
+- High Performance MySQL, O'Relly, page #225
 
 # Data Processing
 ## Concepts
