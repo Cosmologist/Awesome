@@ -87,7 +87,8 @@ Links:
 - [Pre](https://preprocess.io/) - Pre is a PHP preprocessor, designed to make adding new syntax effortless. Flexible integration via Composer
 
 ## Environment
-### CGI, FastCGI, PHP-FPM
+### WebServer
+#### CGI, FastCGI, PHP-FPM
 **CGI** - устаревший протокол взаимодействия между веб-сервером и приложениями (скриптами), общение ведется только через STDIN/STDOUT, на каждый запрос создается отдельный процесс приложения, который умирает после ответа.  
 **FastCGI** - общение ведется через сокеты или TCP (что дает возможность разнести сервер и приложение), предполагается наличие FastCGI-менеджера, который заранее подготоваливает пул процессов приложения, что позволяет значительно быстрее отдать запрос на обработку. Реализация FastCGI-менеджера может быть встроена в сервер (Apache) или нет (Nginx).  
 **PHP-FastCGI** - устаревшая реализация FastCGI встроенная в интерпретатор. В отличие от PHP-FPM - и для CLI (CGI) и для FastCGI использовался общий интерпретатор, для запуска PHP в режиме FastCGI сервиса использовался аргумент ```--bindpath``` в который пробрасывался путь к сокету или TCP-адрес на который биндился FastCGI-менеджер.  
@@ -96,7 +97,11 @@ Links:
 Links:
  - [PHP-FPM, application server made by PHP](https://publications.jbfavre.org/web/php-fpm-apps-server-nginx.en)
  
-### Нативные типы значений, вместо только строковых, в результатах запросах к MySQL через PDO
+### Database
+
+[http://blog.ulf-wendel.de/2008/pdo_mysqlnd-the-new-features-of-pdo_mysql/](Good explanation of PDO_MYSQL)
+ 
+#### Нативные типы значений, вместо только строковых, в результатах запросах к MySQL через PDO
 MySQL должен передавать данные без изменений, по бинарному протоколу, так как PDО не знает их исходный тип.
 Бинарный протокол доступен только при работе с подготовленными выражениями, которые PDO по-умолчанию эмулирует.
 ```php
