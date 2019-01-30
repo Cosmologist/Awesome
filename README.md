@@ -99,7 +99,7 @@ Links:
  
 ### Database
 
-[http://blog.ulf-wendel.de/2008/pdo_mysqlnd-the-new-features-of-pdo_mysql/](Good explanation of PDO_MYSQL)
+[Good explanation of PDO_MYSQL](http://blog.ulf-wendel.de/2008/pdo_mysqlnd-the-new-features-of-pdo_mysql/)
  
 #### Нативные типы значений, вместо только строковых, в результатах запросах к MySQL через PDO
 MySQL должен передавать данные без изменений, по бинарному протоколу, так как PDО не знает их исходный тип.
