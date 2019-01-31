@@ -14,6 +14,7 @@
   - [JS Libraries](#js-libraries)
 - [Various Languages - Fast Start](#various-languages---fast-start)
   - [Go (Golang)](#go-golang)
+  - [Java](#java)
 - [Development Environment](#development-environment)
   - [Database](#database)
   - [MySQL Database](#mysql-database)
@@ -148,6 +149,20 @@ func main() {
 ```
 #### Execution
 Run ```go run hello.go``` or compile and run ```go build hello.go && ./hello```
+
+### Java
+#### Most Simplified Program
+```java
+class HelloWorld
+{
+    public static void main(String[] args)
+    {
+        System.out.println("Hello World!");
+    }
+}
+```
+#### Execution
+```javac HelloWorld.java && java HelloWorld```
 
 # Development Environment
 ## Database
