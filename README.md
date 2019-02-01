@@ -126,13 +126,16 @@ Adds items from right-hand array to the left-hand array, only the keys of which 
 - [Incenteev/hashed-asset-bundle](https://github.com/Incenteev/hashed-asset-bundle) Apply an asset version based on a hash of the asset for symfony/asset
 
 # Web Development
-## Chrome DevTools
- 
-### Useful settings
-**Auxiliary Lines** (**Measure**, **Ruler**) - *Settings -> Elements -> Show Rulers*
 
 ## JS Libraries
 [Clams.js](https://github.com/josephschmitt/Clamp.js) - Clamps an HTML element by adding ellipsis to it if the content inside is too long.
+
+### Сompatibility Assurance
+**[JSHint](https://github.com/jshint/jshint)** is a tool that helps to detect errors and potential problems in your JavaScript code
+
+## Chrome DevTools
+### Useful settings
+**Auxiliary Lines** (**Measure**, **Ruler**) - *Settings -> Elements -> Show Rulers*
 
 ## Various Languages - Fast Start
 
