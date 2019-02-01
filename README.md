@@ -164,6 +164,24 @@ class HelloWorld
 #### Execution
 ```javac HelloWorld.java && java HelloWorld```
 
+#### Project Structure (Archetype)
+**Archetype** is a project stucture convention.  
+You can use one of the [common archetypes](http://maven.apache.org/archetypes/index.html) or create your own.
+
+#### Packages
+
+##### Types
+- **.jar**-файл (Java ARchive) (ZIP-archive with compiled classes + metadata)
+- Sources
+
+##### Name convention
+org.springframework.spring:2.5.5
+- **Package name**: org.springframework.spring
+- **Group name**: org.springframework
+- **Artifact name**: spring
+- **Version**: 2.5.5
+
+
 # Development Environment
 ## Database
 
