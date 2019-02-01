@@ -131,8 +131,9 @@ Adds items from right-hand array to the left-hand array, only the keys of which 
 [Clams.js](https://github.com/josephschmitt/Clamp.js) - Clamps an HTML element by adding ellipsis to it if the content inside is too long.
 
 ### Compatibility Assurance
-- [Browserlist](https://github.com/browserslist/browserslist) is the standard format of config file to share your target browsers between different front-end tools.
-- **[SortSite](https://www.powermapper.com/products/sortsite/checks/browser-compatibility/)**(Online Version) is an application for testing your website for browser compatibility.
+- **[Browserlist](https://github.com/browserslist/browserslist)** is the standard format of config file to share your target browsers between different front-end tools.
+- **[Obsolete Webpack Plugin](https://github.com/ElemeFE/obsolete-webpack-plugin)** generates a browser-side standalone script that detects browser compatibility based on Browserslist and prompts website users to upgrade it.
+- **[SortSite](https://www.powermapper.com/products/sortsite/checks/browser-compatibility/)** (web version) is an application for testing your website for browser compatibility.
 
 ## Chrome DevTools
 ### Useful settings
