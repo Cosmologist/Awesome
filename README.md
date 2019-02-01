@@ -130,8 +130,9 @@ Adds items from right-hand array to the left-hand array, only the keys of which 
 ## JS Libraries
 [Clams.js](https://github.com/josephschmitt/Clamp.js) - Clamps an HTML element by adding ellipsis to it if the content inside is too long.
 
-### Сompatibility Assurance
-**[JSHint](https://github.com/jshint/jshint)** is a tool that helps to detect errors and potential problems in your JavaScript code
+### Tools: Linters
+- **[PowerMapper OnDemand Suite](https://www.powermapper.com/products/ondemand/)** analyzer to accessibility, compatibility, compliance, broken links, SEO, web standards, usability
+- **[JSHint](https://github.com/jshint/jshint)** is a tool that helps to detect errors and potential problems in your JavaScript code
 
 ## Chrome DevTools
 ### Useful settings
