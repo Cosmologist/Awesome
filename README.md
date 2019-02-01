@@ -136,6 +136,16 @@ Adds items from right-hand array to the left-hand array, only the keys of which 
 - **[Obsolete Webpack Plugin](https://github.com/ElemeFE/obsolete-webpack-plugin)** generates a browser-side standalone script that detects browser compatibility based on Browserslist and prompts website users to upgrade it.
 - **[SortSite](https://www.powermapper.com/products/sortsite/checks/browser-compatibility/)** (web version) is an application for testing your website for browser compatibility.
 
+#### Babel
+[Babel](https://babeljs.io/docs/en/usage) is a tool (transpiler) whose the main goal is to achieve compatability with specified targets (like browsers, node) by processing your code.
+```
+# Install
+npm install --save-dev @babel/core @babel/cli @babel/preset-env
+# Run via CLI
+./node_modules/.bin/babel web/js/your-file.js --out-file script-compiled.js --presets=@babel/env
+```
+[@babel/preset-env preset](https://babeljs.io/docs/en/babel-preset-env) - most popular preset. Processes JS-scripts to achieve compatibility with a specified set of browsers (see the browserlist to specify set of browsers).
+
 ## Chrome DevTools
 ### Useful settings
 **Auxiliary Lines** (**Measure**, **Ruler**) - *Settings -> Elements -> Show Rulers*
