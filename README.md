@@ -123,6 +123,17 @@ Adds items from right-hand array to the left-hand array, only the keys of which 
 `$array[]` is about [two times faster](https://stackoverflow.com/posts/559859/revisions), because there is no overhead of calling a function.
 
 # Symfony Development
+## Framework
+### Multiline text in the .yml
+```yaml
+# app/config/config.yml
+appbundle:
+  myservice:
+    description: > 
+                   This is a 
+                   multiline text
+# will parsed as "This is a multiline text"
+```
 ## Libraries
 - [Incenteev/hashed-asset-bundle](https://github.com/Incenteev/hashed-asset-bundle) Apply an asset version based on a hash of the asset for symfony/asset
 
