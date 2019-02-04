@@ -260,7 +260,16 @@ This is a fork of the VAD engine that is part of the WebRTC Native Code package,
 ###### [py-webrtcvad](https://github.com/wiseman/py-webrtcvad)
 This is a python wrapper around Google's [WebRTC](https://webrtc.org/) VAD code. Wrapper contains the original VAD source codes extracted from the WebRTC project (C language) and compiles them during installation to native binary package. 
 
-```python example.py 2 leak-test.wav```, the first agrument is aggressiveness mode, which is an integer between 0 and 3. 0 is the least aggressive about filtering out non-speech, 3 is the most aggressive. The WebRTC VAD only accepts 16-bit mono PCM audio, sampled at 8000, 16000, 32000 or 48000 Hz.
+**Example**:
+```bash
+python example.py 2 leak-test.wav
+```
+**Output**:
+```
+0111000000000000001111111111+(0.54)11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111000000000111111111111111111111111111111111111111111111111111111111111111111100000001111111111111111111111111111111111111111110000000000-(8.1) Writing chunk-00.wav
+
+```
+The first agrument is aggressiveness mode, which is an integer between 0 and 3. 0 is the least aggressive about filtering out non-speech, 3 is the most aggressive. The WebRTC VAD only accepts 16-bit mono PCM audio, sampled at 8000, 16000, 32000 or 48000 Hz.
 
 # Workspace
 ## Utilites
