@@ -200,7 +200,12 @@ org.springframework.spring:2.5.5
 
 ### Python
 #### Packages
-##### Install package with setup.py
+- [Installing Python Modules](https://docs.python.org/3/installing/index.html#installing-index)
+
+##### Install with pip
+```python -m pip install SomePackage```
+
+##### Install with setup.py (manual)
 ```python setup.py install```
 
 # Development Environment
