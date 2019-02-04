@@ -240,12 +240,9 @@ org.springframework.spring:2.5.5
 **Цифровой сигнал** - дискретный сигнал, где значения выражаются числами или чаще всего цифрами (0 и 1 в двоичном представлении).
 
 ## Sound
-### Concepts
+Звук это физическое явление, представляющее собой распространение в виде волн механических колебаний в воздушной среде среде. Как и любая волна, звук характеризуется **амплитудой** (определяет громкость) и **частотой** (определяет тон, высоту). Изменения амплитуды и частоты на протяжении времени представляют собой аналоговый сигнал.
 
-#### Звук
-Физическое явление, представляющее собой распространение в виде волн механических колебаний в воздушной среде среде. Как и любая волна, звук характеризуется **амплитудой** (определяет громкость) и **частотой** (определяет тон, высоту). Изменения амплитуды и частоты на протяжении времени представляют собой аналоговый сигнал.
-
-#### [PCM, Pulse Code Modulation, Ипульсно-кодовая модуляция](https://ru.wikipedia.org/wiki/%D0%98%D0%BC%D0%BF%D1%83%D0%BB%D1%8C%D1%81%D0%BD%D0%BE-%D0%BA%D0%BE%D0%B4%D0%BE%D0%B2%D0%B0%D1%8F_%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D1%8F%D1%86%D0%B8%D1%8F)
+### [PCM, Pulse Code Modulation, Ипульсно-кодовая модуляция](https://ru.wikipedia.org/wiki/%D0%98%D0%BC%D0%BF%D1%83%D0%BB%D1%8C%D1%81%D0%BD%D0%BE-%D0%BA%D0%BE%D0%B4%D0%BE%D0%B2%D0%B0%D1%8F_%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D1%8F%D1%86%D0%B8%D1%8F)
 Процесс оцифровки аналоговых сигналов в цифровой. Обычно в контексте оцифровки аналогового аудиосигнала.  
 Аналоговый аудиосигнал дискретизируется, амплитуда (значение) квантуется и результат кодируется в нужный формат.
 
@@ -253,8 +250,11 @@ org.springframework.spring:2.5.5
 A technique in which the presence or absence of human speech is detected.
 
 #### Implementations
+
 ##### [py-webrtcvad](https://github.com/wiseman/py-webrtcvad)
 This is a python wrapper around Google's [WebRTC](https://webrtc.org/) VAD code. Wrapper contains the original VAD source codes extracted from the WebRTC project (C language) and compiles them during installation to native binary package. 
+###### Example
+```python example.py 2 leak-test.wav```, the first agrument is aggressiveness mode, which is an integer between 0 and 3. 0 is the least aggressive about filtering out non-speech, 3 is the most aggressive. The WebRTC VAD only accepts 16-bit mono PCM audio, sampled at 8000, 16000, 32000 or 48000 Hz.
 
 # Workspace
 ## Utilites
