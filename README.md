@@ -255,6 +255,17 @@ org.springframework.spring:2.5.5
 Процесс оцифровки аналоговых сигналов в цифровой. Обычно в контексте оцифровки аналогового аудиосигнала.  
 Аналоговый аудиосигнал дискретизируется, амплитуда (значение) квантуется и результат кодируется в нужный формат.
 
+### [SoX (Sound Exchange)](http://sox.sourceforge.net/)
+CLI utility and library (libsox) with a huge amount of audio processing features.
+
+#### Usage
+##### Add MP3 support
+```sudo apt-get install libsox-fmt-mp3```
+##### Show information about audio-file
+```sox audio.wav```
+##### Convert from .mp3 to .wav (PCM), change channels count (to mono) and sample rate
+```sox input.mp3 --channels 1 --rate 8000 output.wav```
+
 ### VAD (Voice Actitivity Detection)
 A technique in which the presence or absence of human speech is detected.
 
@@ -272,6 +283,8 @@ This is a fork of the VAD engine that is part of the WebRTC Native Code package,
 
 ###### [py-webrtcvad](https://github.com/wiseman/py-webrtcvad)
 This is a python wrapper around Google's [WebRTC](https://webrtc.org/) VAD code. Wrapper contains the original VAD source codes extracted from the WebRTC project (C language) and compiles them during installation to native binary package. 
+
+
 
 # Workspace
 ## Utilites
