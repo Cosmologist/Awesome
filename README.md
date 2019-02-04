@@ -15,6 +15,7 @@
 - [Various Languages - Fast Start](#various-languages---fast-start)
   - [Go (Golang)](#go-golang)
   - [Java](#java)
+  - [Python](#python)
 - [Development Environment](#development-environment)
   - [Database](#database)
   - [MySQL Database](#mysql-database)
@@ -197,6 +198,10 @@ org.springframework.spring:2.5.5
 - **Artifact name**: spring
 - **Version**: 2.5.5
 
+### Python
+#### Packages
+##### Install package with setup.py
+```python setup.py install```
 
 # Development Environment
 ## Database
