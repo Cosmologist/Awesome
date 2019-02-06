@@ -143,13 +143,11 @@ appbundle:
 [Clams.js](https://github.com/josephschmitt/Clamp.js) - Clamps an HTML element by adding ellipsis to it if the content inside is too long.
 
 ### Compatibility Assurance
-- **[Loading Polyfills Only When Needed](https://philipwalton.com/articles/loading-polyfills-only-when-needed/)** The idea is to manually check and then dynamically load the polyfill.: ```if (!window.fetch) { loadScript('fetchPolyfill.js'); }```
-- **[Browserlist](https://github.com/browserslist/browserslist)** is the standard format of config file to share your target browsers between different front-end tools.
-- **[Obsolete Webpack Plugin](https://github.com/ElemeFE/obsolete-webpack-plugin)** generates a browser-side standalone script that detects browser compatibility based on Browserslist and prompts website users to upgrade it.
-- **[SortSite](https://www.powermapper.com/products/sortsite/checks/browser-compatibility/)** (web version) is an application for testing your website for browser compatibility.
+1. A **transpiler** takes the syntax that older browsers won’t understand (e.g. classes, ‘const’, arrow functions), and turns them into syntax they will understand (functions, ‘var’, functions).
+2. A **polyfill** is code that defines a new object or method in browsers that don’t support that object or method. You can have polyfills for many different features.
 
 #### Babel
-[Babel](https://babeljs.io/docs/en/usage) is a tool (transpiler) whose the main goal is to achieve compatability with specified targets (like browsers, node) by processing your code.
+[Babel](https://babeljs.io/docs/en/usage) is the most famous and popular transpiler.
 ```
 # Install
 npm install --save-dev @babel/core @babel/cli @babel/preset-env
@@ -157,6 +155,12 @@ npm install --save-dev @babel/core @babel/cli @babel/preset-env
 ./node_modules/.bin/babel web/js/your-file.js --out-file script-compiled.js --presets=@babel/env
 ```
 [@babel/preset-env preset](https://babeljs.io/docs/en/babel-preset-env) - most popular preset. Processes JS-scripts to achieve compatibility with a specified set of browsers (see the browserlist to specify set of browsers).
+
+#### Resources
+- **[Loading Polyfills Only When Needed](https://philipwalton.com/articles/loading-polyfills-only-when-needed/)** The idea is to manually check and then dynamically load the polyfill.: ```if (!window.fetch) { loadScript('fetchPolyfill.js'); }```
+- **[Browserlist](https://github.com/browserslist/browserslist)** is the standard format of config file to share your target browsers between different front-end tools.
+- **[Obsolete Webpack Plugin](https://github.com/ElemeFE/obsolete-webpack-plugin)** generates a browser-side standalone script that detects browser compatibility based on Browserslist and prompts website users to upgrade it.
+- **[SortSite](https://www.powermapper.com/products/sortsite/checks/browser-compatibility/)** (web version) is an application for testing your website for browser compatibility.
 
 ## Chrome DevTools
 ### Useful settings
