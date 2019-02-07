@@ -10,8 +10,9 @@
 - [Symfony Development](#symfony-development)
   - [Libraries](#libraries-1)
 - [Web Development](#web-development)
-  - [Chrome DevTools](#chrome-devtools)
   - [JavaScript Compatibility Assurance](#javascript-compatibility-assurance)
+  - [CSS Compatibility Assurance](#css-compatibility-assurance)
+  - [Chrome DevTools](#chrome-devtools)
   - [JavaScript Libraries](#javascript-libraries)
 - [Various Languages - Fast Start](#various-languages---fast-start)
   - [Go (Golang)](#go-golang)
@@ -145,7 +146,7 @@ appbundle:
 ## JavaScript Libraries
 [Clams.js](https://github.com/josephschmitt/Clamp.js) - Clamps an HTML element by adding ellipsis to it if the content inside is too long.
 
-### JavsScript Compatibility Assurance
+### JavaScript Compatibility Assurance
 1. A **transpiler** takes the syntax that older browsers won’t understand (e.g. classes, ‘const’, arrow functions), and turns them into syntax they will understand (functions, ‘var’, functions).
 2. A **polyfill** is code that defines a new object or method in browsers that don’t support that object or method. You can have polyfills for many different features.
 
