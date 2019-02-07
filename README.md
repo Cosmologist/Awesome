@@ -23,6 +23,8 @@
 - [Data Processing](#data-processing)
   - [Theory](#theory)
   - [Sound](#sound)
+- [Data Communication](#data-communication)
+  - [Network](#network)
 - [Workspace](#workspace)
   - [Utilities](#utilites)
   - [Receipts](#receipts)
@@ -289,7 +291,15 @@ This is a fork of the VAD engine that is part of the WebRTC Native Code package,
 ###### [py-webrtcvad](https://github.com/wiseman/py-webrtcvad)
 This is a python wrapper around Google's [WebRTC](https://webrtc.org/) VAD code. Wrapper contains the original VAD source codes extracted from the WebRTC project (C language) and compiles them during installation to native binary package. 
 
+# Data Communication
 
+## Network
+
+### How To
+
+#### Какие порты доступны для исходящих соединений
+Проверить доступ к порту можно следующим образом: `telnet portquiz.net 80` ([portquiz.net](portquiz.net) - публичный сервер на котором открыты все TCP-порты).  
+Получить список всех портов можно с помощью nmap: `nmap IP` или только по первым 100 списка популярных портов `nmap --top-ports 100 portquiz.net`
 
 # Workspace
 ## Utilites
@@ -321,11 +331,3 @@ strace -e trace=memory
 ```
 **Resources**
 - [The ultimate strace cheat sheet](https://linux-audit.com/the-ultimate-strace-cheat-sheet/)
-
-### Receipts
-
-**Какие порты доступны для исходящих соединений**
- 
-Проверить доступ к порту можно следующим образом: `telnet portquiz.net 80` ([portquiz.net](portquiz.net) - публичный сервер на котором открыты все TCP-порты).  
-Получить список всех портов можно с помощью nmap: `nmap IP` или только по первым 100 списка популярных портов `nmap --top-ports 100 portquiz.net`
-
