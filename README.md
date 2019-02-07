@@ -147,10 +147,14 @@ appbundle:
 [Clams.js](https://github.com/josephschmitt/Clamp.js) - Clamps an HTML element by adding ellipsis to it if the content inside is too long.
 
 ### JavaScript Compatibility Assurance
-1. A **transpiler** takes the syntax that older browsers won’t understand (e.g. classes, ‘const’, arrow functions), and turns them into syntax they will understand (functions, ‘var’, functions).
-2. A **polyfill** is code that defines a new object or method in browsers that don’t support that object or method. You can have polyfills for many different features.
+Each browser version implements a specific set of ECMAScript language features. Then you should provide compatible scripts to specific browsers set.
 
-#### Babel
+#### Convert your scripts to older standards
+
+##### Transpiler
+Takes the syntax that older browsers won’t understand (e.g. classes, ‘const’, arrow functions), and turns them into syntax they will understand (functions, ‘var’, functions).
+
+##### Babel Transpiler
 [Babel](https://babeljs.io/docs/en/usage) is the most famous and popular transpiler.
 ```
 # Install
@@ -160,16 +164,25 @@ npm install --save-dev @babel/core @babel/cli @babel/preset-env
 ```
 [@babel/preset-env preset](https://babeljs.io/docs/en/babel-preset-env) - most popular preset. Processes JS-scripts to achieve compatibility with a specified set of browsers (see the browserlist to specify set of browsers).
 
-#### Resources
-- **[Loading Polyfills Only When Needed](https://philipwalton.com/articles/loading-polyfills-only-when-needed/)** The idea is to manually check and then dynamically load the polyfill.: ```if (!window.fetch) { loadScript('fetchPolyfill.js'); }```
-- **[Browserlist](https://github.com/browserslist/browserslist)** is the standard format of config file to share your target browsers between different front-end tools.
-- **[Obsolete Webpack Plugin](https://github.com/ElemeFE/obsolete-webpack-plugin)** generates a browser-side standalone script that detects browser compatibility based on Browserslist and prompts website users to upgrade it.
-- **[SortSite](https://www.powermapper.com/products/sortsite/checks/browser-compatibility/)** (web version) is an application for testing your website for browser compatibility.
+#### Providing polyfills for unsupported browser features
+##### Polyfill
+Polyfill is a workaround for the specific missed feature.
+###### [Loading Polyfills Only When Needed](https://philipwalton.com/articles/loading-polyfills-only-when-needed/)
+The idea is to manually check and then dynamically load the polyfill.: ```if (!window.fetch) { loadScript('fetchPolyfill.js'); }```
+
+#### Useful
+##### Check you website for compatibility issues
+- [SortSite](https://www.powermapper.com/products/sortsite/checks/browser-compatibility/).
+##### Notify users with non-supported browsers
+- [Obsolete Webpack Plugin](https://github.com/ElemeFE/obsolete-webpack-plugin)** generates a browser-side standalone script that detects browser compatibility based on Browserslist and prompts website users to upgrade it.
 
 ### CSS Compatibility Assurance
-#### [Autoprefixer](https://github.com/postcss/autoprefixer)
-CSS postprocessor, adds the missing vendor prefixes to your CSS rules if necessary.
-CSS vendor prefixes, also sometimes known as or CSS browser prefixes, are a way for browser makers to add support for new CSS features before those features are fully supported in all browsers.
+
+#### Add missed CSS vendor prefixes suitable to required browsers set
+CSS vendor prefixes (CSS browser prefixes) are a way for browser makers to add support for new CSS features before those features are fully supported in all browsers. Therefore, to support previous versions of browsers, add prefixes to the style sheet that are suitable for the browsers you need.
+
+##### [Autoprefixer](https://github.com/postcss/autoprefixer)
+CSS postprocessor, adds the required vendor prefixes to your stylesheets.
 
 ## Chrome DevTools
 ### Useful settings
