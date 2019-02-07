@@ -221,16 +221,14 @@ class HelloWorld
 #### Compile and Run
 ```javac HelloWorld.java && java HelloWorld```
 
-#### Hello World Project (IntelliJ Idea)
+#### IntelliJ Idea
+
+##### Create Project
 *Create New Project -> Create Project From Template (Java Hello World) -> Choose project name and location -> Finish -> Run*
 
-#### Project Structure (Archetype)
-**Archetype** is a project stucture convention.  
-You can use one of the [common archetypes](http://maven.apache.org/archetypes/index.html) or create your own.
+##### Git Integration
+- Add `out\` to `.gitignore`
 
-#### Libraries (Packages)
-- **.jar**-файл (Java ARchive) (ZIP-archive with compiled classes + metadata)
-- Sources
 
 ### Python
 #### Packages
