@@ -165,6 +165,11 @@ npm install --save-dev @babel/core @babel/cli @babel/preset-env
 - **[Obsolete Webpack Plugin](https://github.com/ElemeFE/obsolete-webpack-plugin)** generates a browser-side standalone script that detects browser compatibility based on Browserslist and prompts website users to upgrade it.
 - **[SortSite](https://www.powermapper.com/products/sortsite/checks/browser-compatibility/)** (web version) is an application for testing your website for browser compatibility.
 
+### CSS Compatibility Assurance
+#### [Autoprefixer](https://github.com/postcss/autoprefixer)
+CSS postprocessor, adds the missing vendor prefixes to your CSS rules if necessary.
+CSS vendor prefixes, also sometimes known as or CSS browser prefixes, are a way for browser makers to add support for new CSS features before those features are fully supported in all browsers.
+
 ## Chrome DevTools
 ### Useful settings
 **Auxiliary Lines** (**Measure**, **Ruler**) - *Settings -> Elements -> Show Rulers*
