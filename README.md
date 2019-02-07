@@ -205,7 +205,7 @@ func main() {
 Run ```go run hello.go``` or compile and run ```go build hello.go && ./hello```
 
 ### Java
-#### Most Simplified Program
+#### Hello World Example
 ```java
 class HelloWorld
 {
@@ -215,7 +215,7 @@ class HelloWorld
     }
 }
 ```
-#### Execution
+#### Execute
 ```javac HelloWorld.java && java HelloWorld```
 
 #### Project Structure (Archetype)
@@ -229,21 +229,13 @@ You can use one of the [common archetypes](http://maven.apache.org/archetypes/in
 - Sources
 
 ##### Name convention
-org.springframework.spring:2.5.5
-- **Package name**: org.springframework.spring
-- **Group name**: org.springframework
-- **Artifact name**: spring
-- **Version**: 2.5.5
+`org.springframework.spring:2.5.5` consists of **group** *org.springframework*, **package** *org.springframework.spring*, **artifact** `*spring*, version *2.5.5*.
 
 ### Python
 #### Packages
-- [Installing Python Modules](https://docs.python.org/3/installing/index.html#installing-index)
-
-##### Install with pip
-```python -m pip install SomePackage```
-
-##### Install with setup.py (manual)
-```python setup.py install```
+- Documentation [Installing Python Modules](https://docs.python.org/3/installing/index.html#installing-index)
+- Install with pip ```python -m pip install SomePackage```
+- Manual installation with setup.py ```python setup.py install```
 
 # Development Environment
 ## Database
