@@ -120,7 +120,7 @@ $pdo->setAttribute(PDO::ATTR_STRINGIFY_FETCHES, false);
 
 ### IDE: PhpStorm
 #### Define global breakpoint for any exceptions (except certain ones)
-![Catch the global exception](https://github.com/Cosmologist/Awesome/blob/master/images/phpstorm-global-exception-breakpoint.png?raw=true" alt="phpstorm-global-exception-breakpoint.png) "Disable breakpoint until is hit" option value must be *Any* to skip any other exception declared here.  
+![Catch the global exception](https://github.com/Cosmologist/Awesome/blob/master/images/phpstorm-global-exception-breakpoint.png?raw=true) "Disable breakpoint until is hit" option value must be *Any* to skip any other exception declared here.  
 To exclude certain exceptions (possibly used to control the flow :)), you must declare them here and uncheck the *Suspend* flag.
 
 ## Nuances
