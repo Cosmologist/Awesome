@@ -94,6 +94,16 @@ Links:
 - [Pre](https://preprocess.io/) - Pre is a PHP preprocessor, designed to make adding new syntax effortless. Flexible integration via Composer
 
 ## Environment
+
+### Debug
+#### Trigger breakpoint for all exceptions [PhpStorm]
+*Run -> View Breakpoints -> Add (PHP Exception Breakpoints) -> Enter Exception FQCN "Exception"*
+![Catch the global exception](https://github.com/Cosmologist/Awesome/blob/master/images/phpstorm-global-exception-breakpoint.png?raw=true)
+
+##### Exclude certain exceptions
+- Ignored breakpoint should be exist (inline or via *PHP Exception Breakpoints*) and have uncheked *Suspend* flag
+- Select *Any* value (or a specific breakpoint/group of breakpoints) for the "Disable breakpoint until is hit" option of global exception breakpoint.
+
 ### WebServer
 #### CGI, FastCGI, PHP-FPM
 **CGI** - устаревший протокол взаимодействия между веб-сервером и приложениями (скриптами), общение ведется только через STDIN/STDOUT, на каждый запрос создается отдельный процесс приложения, который умирает после ответа.  
@@ -117,11 +127,6 @@ $pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
 // Для PDO дополнительно нужно
 $pdo->setAttribute(PDO::ATTR_STRINGIFY_FETCHES, false);
 ```
-
-### IDE: PhpStorm
-#### Define global breakpoint for any exceptions (except certain ones)
-![Catch the global exception](https://github.com/Cosmologist/Awesome/blob/master/images/phpstorm-global-exception-breakpoint.png?raw=true) "Disable breakpoint until is hit" option value must be *Any* to skip any other exception declared here.  
-**To exclude certain exceptions** (possibly used to control the flow :)), you must declare them here and uncheck the *Suspend* flag.
 
 ## Nuances
 
