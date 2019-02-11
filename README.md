@@ -28,8 +28,8 @@
 - [Data Communication](#data-communication)
   - [Network](#network)
 - [Workspace](#workspace)
-  - [Utilities](#utilites)
-  - [Receipts](#receipts)
+  - [System Utilities](#system-utilites)
+  - [Telephony: Asterisk](#telephony-asterisk)
 
 # Development
 
@@ -327,23 +327,16 @@ This is a python wrapper around Google's [WebRTC](https://webrtc.org/) VAD code.
 Получить список всех портов можно с помощью nmap: `nmap IP` или только по первым 100 списка популярных портов `nmap --top-ports 100 portquiz.net`
 
 # Workspace
-## Utilites
 
-[htop](https://www.systutorials.com/docs/linux/man/1-htop/) is intuitive and powerful interactive process viewer
-  
-[Midnight Commader](http://midnight-commander.org) is a powerfult text user-interface file manager
+## System Utilites
 
-**Resources**
-- [Use Midnight Commander like a pro](http://klimer.eu/2015/05/01/use-midnight-commander-like-a-pro/)
-- [Midnight Commander Tips and Tricks](http://www.softpanorama.org/OFM/MC/mc_tips.shtml)
+### htop
+[htop](https://www.systutorials.com/docs/linux/man/1-htop/) is intuitive and powerful interactive process viewer.
 
-**Settings**
-- Settings will be stored in the *~/.config/mc/ini*
-- Datetime format option names are *timeformat_old* (datetime < now - 6 months) and *timeformat_recent* (datetime > now - 6 month). Example of format: `%Y-%m-%d %H:%M`
-
+### strace
 [strace](https://strace.io/) is Linux utility to monitor and tamper with interactions between processes and the Linux kernel (system calls, signal deliveries, and changes of process state).
 
-**Examples**
+#### Examples
 ```
 # Monitoring file activity
 strace -p process-pid
@@ -354,5 +347,19 @@ strace -e trace=network
 # Monitoring memory calls
 strace -e trace=memory
 ```
-**Resources**
+#### Links
 - [The ultimate strace cheat sheet](https://linux-audit.com/the-ultimate-strace-cheat-sheet/)
+
+
+### Midnight Commander
+[Midnight Commader](http://midnight-commander.org) is a powerfult text user-interface file manager.
+
+#### Links
+- [Use Midnight Commander like a pro](http://klimer.eu/2015/05/01/use-midnight-commander-like-a-pro/)
+- [Midnight Commander Tips and Tricks](http://www.softpanorama.org/OFM/MC/mc_tips.shtml)
+
+#### Settings
+- Settings will be stored in the *~/.config/mc/ini*
+- Datetime format option names are *timeformat_old* (datetime < now - 6 months) and *timeformat_recent* (datetime > now - 6 month). Example of format: `%Y-%m-%d %H:%M`
+
+## Telephony (Asterisk)
