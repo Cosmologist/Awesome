@@ -363,3 +363,5 @@ strace -e trace=memory
 - Datetime format option names are *timeformat_old* (datetime < now - 6 months) and *timeformat_recent* (datetime > now - 6 month). Example of format: `%Y-%m-%d %H:%M`
 
 ## Telephony (Asterisk)
+### Links
+- [Asterisk Book 3rd Edition [HTML][Eng]](http://www.asteriskdocs.org/en/3rd_Edition/asterisk-book-html-chunk/index.html)
