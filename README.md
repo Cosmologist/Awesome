@@ -29,7 +29,7 @@
   - [Network](#network)
 - [Workspace](#workspace)
   - [System Utilities](#system-utilites)
-  - [Telephony: Asterisk](#telephony-asterisk)
+  - [Telephony](#telephony)
 
 # Development
 
