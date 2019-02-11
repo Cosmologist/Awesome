@@ -393,20 +393,18 @@ strace -e trace=memory
 **Пример**
 ( _1234. - matches anything strating with 1234 excluding 1234 itself).
 
-#### Пример контекста
+##### Пример контекста
 ```
-...
 [incoming]
 exten => s,1,Answer()
 exten => s,n,Playback(hello-world)
 exten => s,n,Hangup() 
-...
 ```
-**s** (Start) зарезервированное имя и соответствуют состоянию входящего соединения в самом начале.
-**priority** число определяет последовательность выполнения в рамках экстеншенов с одним именем (условием). *n* значит следующее число, чтобы не писать 1,2,3
+- **s** (Start) зарезервированное имя и соответствуют состоянию входящего соединения в самом начале.
+- **priority** число определяет последовательность выполнения в рамках экстеншенов с одним именем (условием). *n* значит следующее число, чтобы не писать 1,2,3
 
-# Пример контекста с группами по имени/условию
-В рамках одного контекста может быть несколько групп экстеншенов, которые группированы по одинакому имени:
+##### Пример контекста с несколькими группами по имени/шаблону
+```
 [incoming]
 exten => +74951234567,1,Answer()
 exten => +74951234567,n,Playback(hello-moscow)
@@ -415,7 +413,9 @@ exten => +78121234567,1,Answer()
 exten => +78121234567,n,Playback(hello-piter)
 
 exten => +78121234567,n,Hangup() 
-### Useful
+```
+
+#### Useful
 - [Chapter 5. Dialplan Basics, Asterisk: The Future of Telephony, 2nd Edition](https://www.oreilly.com/library/view/asterisk-the-future/9780596510480/ch05.html) Отличная вводная
 - [Asterisk Book 3rd Edition [HTML][Eng]](http://www.asteriskdocs.org/en/3rd_Edition/asterisk-book-html-chunk/index.html)
 - [FreePBX](https://www.freepbx.org/) web-интерфейс для управления сервером. Наиболее известное и распространенное решение по сравнению с другими.
