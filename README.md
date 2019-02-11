@@ -377,20 +377,20 @@ strace -e trace=memory
 ###### Формат 
 ```exten => name,priority,action()```
 
-###### Имя/шаблон
+###### Имя/условие/шаблон
 - обычная метка для *extension* в формате `([0-9]|[ABCD]|[a-z])+`
 - условие выполнения действия
   a. по *state* соединения `i|s|h|t|T|o` (Invalid, Start, Hangup, Timeout, AbsoluteTimeout, Operator)
   b. по идентификатору соединения (номер телефона) или по шаблону для идентификатора (начинается с *_*)
 
-**Шаблон**
+**Формат шаблона**
 - X - any digit from 0-9
 - Z - any digit from 1-9
 - N - any digit from 2-9
 - [12679] - any digit in the brakets (in the example: 1,2,6,7,9)
 - . - (dot) wildcard, matches everything remaining 
 
-**Пример**
+**Пример шаблона**
 ( _1234. - matches anything strating with 1234 excluding 1234 itself).
 
 ##### Пример контекста
