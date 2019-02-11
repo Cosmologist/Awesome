@@ -363,5 +363,13 @@ strace -e trace=memory
 - Datetime format option names are *timeformat_old* (datetime < now - 6 months) and *timeformat_recent* (datetime > now - 6 month). Example of format: `%Y-%m-%d %H:%M`
 
 ## Telephony (Asterisk)
+### Basics
+#### Dialplan
+Это список правил по которым сервер определяет как обработать входящее соединение.  
+Все входящие соединения проходят чере dialplan.  
+Находится в файле `/etc/asterisk/extensions.conf`
+
+Dialplan это ядро сервера - все соединения ч все  is the heart of Asterisk. All channels that arrive in the system will be passed through the dialplan, which contains the call-flow script that determines how the incoming calls are handled.
+
 ### Links
 - [Asterisk Book 3rd Edition [HTML][Eng]](http://www.asteriskdocs.org/en/3rd_Edition/asterisk-book-html-chunk/index.html)
