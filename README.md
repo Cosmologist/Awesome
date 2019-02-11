@@ -367,7 +367,13 @@ strace -e trace=memory
 #### Dialplan
 Это список правил по которым сервер определяет как обработать входящее соединение.  
 Все входящие соединения проходят чере dialplan.  
-Находится в файле `/etc/asterisk/extensions.conf`
+Находится в файле `/etc/asterisk/extensions.conf`.
+
+#### Управление
+По умолчанию все настраивается через конфигурационные файлы Asterisk.
+
+##### [FreePBX](https://www.freepbx.org/)
+Графический интерфейс с открытым исходным кодом, предназначенный для управления Asterisk.
 
 ### Links
 - [Asterisk Book 3rd Edition [HTML][Eng]](http://www.asteriskdocs.org/en/3rd_Edition/asterisk-book-html-chunk/index.html)
