@@ -369,7 +369,5 @@ strace -e trace=memory
 Все входящие соединения проходят чере dialplan.  
 Находится в файле `/etc/asterisk/extensions.conf`
 
-Dialplan это ядро сервера - все соединения ч все  is the heart of Asterisk. All channels that arrive in the system will be passed through the dialplan, which contains the call-flow script that determines how the incoming calls are handled.
-
 ### Links
 - [Asterisk Book 3rd Edition [HTML][Eng]](http://www.asteriskdocs.org/en/3rd_Edition/asterisk-book-html-chunk/index.html)
