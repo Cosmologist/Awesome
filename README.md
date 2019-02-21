@@ -337,7 +337,7 @@ This is a python wrapper around Google's [WebRTC](https://webrtc.org/) VAD code.
 #### Управляющие символы ANSI (ANSI escape code)
 Cпециальные символы, встраиваемые в текстовый вывод (stdout) приложения, для форматирования содержимого (цвет, форматирование) или для взаимодействия с пользователем или другими процессами
 
-- [Краткая и информативная вводная с примерами](https://stackoverflow.com/posts/33206814/revisions) - начинать лучше с нее
+- [Краткая и информативная вводная с примерами](https://stackoverflow.com/questions/4842424/list-of-ansi-color-escape-sequences/33206814#33206814) - начинать лучше с нее
 - [Управляющие последовательности ANSI - Wikipedia](https://ru.wikipedia.org/wiki/%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D1%8F%D1%8E%D1%89%D0%B8%D0%B5_%D0%BF%D0%BE%D1%81%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D0%B8_ANSI)
 - [Bash/Prompt customization](https://wiki.archlinux.org/index.php/Bash/Prompt_customization)
 - [Build your own Command Line with ANSI escape codes](http://www.lihaoyi.com/post/BuildyourownCommandLinewithANSIescapecodes.html)
