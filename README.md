@@ -28,7 +28,8 @@
 - [Data Communication](#data-communication)
   - [Network](#network)
 - [Workspace](#workspace)
-  - [System Utilities](#system-utilites)
+  - [System](#system)
+  - [System Utilities](#utilites)
   - [Telephony](#telephony)
 
 # Development
@@ -328,39 +329,12 @@ This is a python wrapper around Google's [WebRTC](https://webrtc.org/) VAD code.
 
 # Workspace
 
-## System Utilites
+## System
 
-### htop
-[htop](https://www.systutorials.com/docs/linux/man/1-htop/) is intuitive and powerful interactive process viewer.
-
-### strace
-[strace](https://strace.io/) is Linux utility to monitor and tamper with interactions between processes and the Linux kernel (system calls, signal deliveries, and changes of process state).
-
-#### Examples
-```
-# Monitoring file activity
-strace -p process-pid
-
-# Monitoring the network
-strace -e trace=network
-
-# Monitoring memory calls
-strace -e trace=memory
-```
-#### Links
-- [The ultimate strace cheat sheet](https://linux-audit.com/the-ultimate-strace-cheat-sheet/)
-
-
-### Midnight Commander
-[Midnight Commader](http://midnight-commander.org) is a powerfult text user-interface file manager.
-
-#### Links
-- [Use Midnight Commander like a pro](http://klimer.eu/2015/05/01/use-midnight-commander-like-a-pro/)
-- [Midnight Commander Tips and Tricks](http://www.softpanorama.org/OFM/MC/mc_tips.shtml)
-
-#### Settings
-- Settings will be stored in the *~/.config/mc/ini*
-- Datetime format option names are *timeformat_old* (datetime < now - 6 months) and *timeformat_recent* (datetime > now - 6 month). Example of format: `%Y-%m-%d %H:%M`
+### Utilities
+- [htop](https://www.systutorials.com/docs/linux/man/1-htop/) is intuitive and powerful interactive process viewer.
+- [strace](workspace/strace.md) is Linux utility to monitor and tamper with interactions between processes and the Linux kernel (system calls, signal deliveries, and changes of process state).
+- [Midnight Commander](workspace/midnight-commander.md) is a powerfult text user-interface file manager.
 
 ## Telephony
 ### Asterisk
