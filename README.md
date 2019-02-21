@@ -37,33 +37,11 @@
 # Development
 
 ## Resources
-[LibHunt](https://www.libhunt.com/) - Big curruated catalog of useful libraries and resources. It has a convenient ability to compare libraries.
+- [LibHunt](https://www.libhunt.com/) Big curruated catalog of useful libraries and resources. It has a convenient ability to compare libraries.
 
 ## Constructs
-[Функциональный интерфейс](https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html) (**Functional Interfaces**, **SAM (Single Abstract Method) Interfaces** - интерфейс который содержит **только один метод**.
-
-**Promise** - Cпособ извещения о завершении обработки (успешной или нет) и получения результата обработки при параллельных вычислениях.
- 
-```js
-function computeAsync(inputData) {
-  return new Promise(function (resolve, reject) {
-    ... // долгие вычисления
-    
-    if (error) {
-      // уведомляем что вычисления завершены с ошибкой
-      // можем передать любые данные, которые будут переданы в failComputationCallback (смотри ниже)
-      reject(errorData)
-    } else {
-      // уведомляем что вычисления завершены с ошибкой
-      // можем передать любые данные, которые будут переданы в successComputationCallback (смотри ниже)
-      resolve(data) // уведомляем что вычисления завершены успешно, можем вернуть дополнительную информацию
-    }
-  }
-)
-...
-computeAsync().then(successComputationCallback, failComputationCallback)
-```
-- [Using_promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises)
+- [Функциональный интерфейс](https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html) (**Functional Interfaces**, **SAM (Single Abstract Method) Interfaces** - интерфейс который содержит **только один метод**.
+- [Promise](dev/promise.md) в параллельных вычислениях это подход для извещения о завершении обработки (успешной или нет) и получения результата. ```computeAsync().then(successComputationCallback, failComputationCallback)```.
 
 ## Misc
 
