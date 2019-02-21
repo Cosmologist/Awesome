@@ -87,14 +87,18 @@ Links:
 
 # PHP Development
 
+## Language
+- [Pre](https://preprocess.io/) is a PHP preprocessor, designed to make adding new syntax effortless. Flexible integration via Composer
+- **Оператор `+`** adds items from right-hand array to the left-hand array, only the keys of which are missing in the left-hand array (associative or indexed keys).  Use case: building a config array, where the left-hand array contains only changed parameters, and the right-hand array contains all possible parameters with default values.
+- [`$array[]` быстрее `array_push`](https://stackoverflow.com/posts/559859/revisions) примерно в два раза. Так как`$array[]` это оператор языка, а `array_push` это функция (дополнительные раскладные расходы на вызов функции) 
+
 ## Resources
-[marcelgsantos/learning-oop-in-php](https://github.com/marcelgsantos/learning-oop-in-php) - A collection of resources to learn object-oriented programming and related concepts for PHP developers.
+- [Awesome PHP](https://php.libhunt.com/) A curated list of awesome PHP libraries and resources
+- [marcelgsantos/learning-oop-in-php](https://github.com/marcelgsantos/learning-oop-in-php) A collection of resources to learn object-oriented programming and related concepts for PHP developers.
 
 ## Libraries
-- [Awesome PHP](https://php.libhunt.com/) A curated list of awesome PHP libraries and resources
 - [nette/utils](https://github.com/nette/utils) Lightweight utilities for string & array manipulation, image handling, safe JSON encoding/decoding, validation, slug or strong password generating etc
 - [danielstjules/Stringy](https://github.com/danielstjules/Stringy) A PHP string manipulation library with multibyte support
-- [Pre](https://preprocess.io/) - Pre is a PHP preprocessor, designed to make adding new syntax effortless. Flexible integration via Composer
 
 ## Environment
 
@@ -130,15 +134,6 @@ $pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
 // Для PDO дополнительно нужно
 $pdo->setAttribute(PDO::ATTR_STRINGIFY_FETCHES, false);
 ```
-
-## Nuances
-
-### The + operator
-Adds items from right-hand array to the left-hand array, only the keys of which are missing in the left-hand array (associative or indexed keys).  
-**Example**: building a config array, where the left-hand array contains only changed parameters, and the right-hand array contains all possible parameters with default values.
-
-### `$array[]` vs `array_push`
-`$array[]` is about [two times faster](https://stackoverflow.com/posts/559859/revisions), because there is no overhead of calling a function.
 
 # Symfony Development
 ## Framework
