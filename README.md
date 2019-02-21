@@ -67,6 +67,7 @@ Links:
 
 ## Language
 - [Pre](https://preprocess.io/) is a PHP preprocessor, designed to make adding new syntax effortless. Flexible integration via Composer
+- [PHP Enum](https://github.com/myclabs/php-enum) грамотная реализация для типа *Enum*. Есть сторонние расширения для интеграции типа с *Doctrine* и *ParamConverter*.
 - **Оператор `+`** adds items from right-hand array to the left-hand array, only the keys of which are missing in the left-hand array (associative or indexed keys).  Use case: building a config array, where the left-hand array contains only changed parameters, and the right-hand array contains all possible parameters with default values.
 - [`$array[]` быстрее `array_push`](https://stackoverflow.com/posts/559859/revisions) примерно в два раза. Так как`$array[]` это оператор языка, а `array_push` это функция (дополнительные раскладные расходы на вызов функции) 
 
