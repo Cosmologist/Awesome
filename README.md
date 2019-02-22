@@ -318,7 +318,7 @@ Cпециальные символы, встраиваемые в текстов
 - [Terminal codes (ANSI/VT100) introduction](https://wiki.bash-hackers.org/scripting/terminalcodes#terminal_codes_ansivt100_introduction)
 
 ### Utilities
-- [htop](https://www.systutorials.com/docs/linux/man/1-htop/) is intuitive and powerful interactive process viewer.
+- [htop](https://www.systutorials.com/docs/linux/man/1-htop/) #tui #linux Приложение для просмотра и управления запущенными процессами, c интуитивным интерфейсом и с большим количеством возможностей.
 - [strace](workspace/strace.md) is Linux utility to monitor and tamper with interactions between processes and the Linux kernel (system calls, signal deliveries, and changes of process state).
 - [Midnight Commander](workspace/midnight-commander.md) is a powerfult text user-interface file manager.
 
