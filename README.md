@@ -1,6 +1,10 @@
 - [Development](#development)
   - [Resources](#resources)
   - [Constructs](#constructs)
+  - [Environment](#environment)
+    - [Database](#database)
+    - [Database: MySQL](#database-mysql)
+    - [Docker](#docker)
   - [Misc](#misc)
 - [PHP Development](#php-development)
   - [Language](#language)
@@ -18,10 +22,6 @@
   - [Go (Golang)](#go-golang)
   - [Java](#java)
   - [Python](#python)
-- [Development Environment](#development-environment)
-  - [Database](#database)
-  - [MySQL Database](#mysql-database)
-  - [Docker](#docker)
 - [Data Processing](#data-processing)
   - [Theory](#theory)
   - [Sound](#sound)
@@ -42,6 +42,29 @@
 ## Constructs
 - [Функциональный интерфейс](https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html) (**Functional Interfaces**, **SAM (Single Abstract Method) Interfaces** - интерфейс который содержит **только один метод**.
 - [Promise](dev/promise.md) в параллельных вычислениях это подход для извещения о завершении обработки (успешной или нет) и получения результата. ```computeAsync().then(successComputationCallback, failComputationCallback)```.
+ 
+## Environment
+### Database
+
+#### Storing Files in a Database
+> [I know of no advantages to storing data I want to keep for a long time outside of a database.](https://asktom.oracle.com/pls/apex/f?p=100:11:0%3A%3A%3A%3AP11_QUESTION_ID:1011065100346196442) If it is in the database. I can be sure it is professionally managed, backed up, recoverable (with the rest of the data), secured, scalable (try putting 100,000 documents in a single directory, now, put them in table - which one 'scales' - it is not the directory). I can undelete (flashback) easily. I have locking. I have read consistency.
+
+### Database: MySQL
+[MySQL Workbench](https://www.mysql.com/products/workbench/) The best UI-solution to MySQL administration! And a good data management solution.
+
+#### Текстовый и бинарный протоколы
+Текстовый протокол оперирует текстовыми данными, бинарный текстовыми и числовыми.  
+Бинарный протокол более эффективен так как:
+- данные, которыми происходит обмен, эффективней упакованы (занимают меньше места)
+- уменьшает количество операций по приведению типов на сервере и восстановлению (опционально) типов на клиенте
+**Важно:** MySQL позволяет использовать бинарный протокол только для при работе с prepared statements.
+
+- [https://dev.mysql.com/doc/internals/en/binary-protocol-value.html]
+- High Performance MySQL, O'Relly, page #225
+
+### Docker
+#### Run on VPS/VDS (OpenVZ)
+Docker is only supported with OpenVZ 7 (based on 3.x kernel, [see](https://openvz.org/Docker_inside_CT_vz7)) or with OpenVZ 6 with kernel version 042stab105.4 or newer ([see](https://openvz.org/Docker_inside_CT)). ([From](https://stackoverflow.com/posts/35951482/revisions))
 
 ## Misc
 
@@ -61,7 +84,6 @@ Links:
  - [What's the technical definition for “routine”?](https://stackoverflow.com/posts/6885971/revisions)
  - [Сопрограммы (корутины, coroutine) - что это?](https://ru.stackoverflow.com/questions/496002/%D0%A1%D0%BE%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D1%8B-%D0%BA%D0%BE%D1%80%D1%83%D1%82%D0%B8%D0%BD%D1%8B-coroutine-%D1%87%D1%82%D0%BE-%D1%8D%D1%82%D0%BE )
  - [Coroutine, для чего они нужны?](https://toster.ru/q/405733)
-
 
 # PHP Development
 
@@ -227,29 +249,6 @@ class HelloWorld
 - Documentation [Installing Python Modules](https://docs.python.org/3/installing/index.html#installing-index)
 - Install with pip ```python -m pip install SomePackage```
 - Manual installation with setup.py ```python setup.py install```
-
-# Development Environment
-## Database
-
-### Storing Files in a Database
-> [I know of no advantages to storing data I want to keep for a long time outside of a database.](https://asktom.oracle.com/pls/apex/f?p=100:11:0%3A%3A%3A%3AP11_QUESTION_ID:1011065100346196442) If it is in the database. I can be sure it is professionally managed, backed up, recoverable (with the rest of the data), secured, scalable (try putting 100,000 documents in a single directory, now, put them in table - which one 'scales' - it is not the directory). I can undelete (flashback) easily. I have locking. I have read consistency.
-
-## MySQL Database
-[MySQL Workbench](https://www.mysql.com/products/workbench/) The best UI-solution to MySQL administration! And a good data management solution.
-
-### Текстовый и бинарный протоколы
-Текстовый протокол оперирует текстовыми данными, бинарный текстовыми и числовыми.  
-Бинарный протокол более эффективен так как:
-- данные, которыми происходит обмен, эффективней упакованы (занимают меньше места)
-- уменьшает количество операций по приведению типов на сервере и восстановлению (опционально) типов на клиенте
-**Важно:** MySQL позволяет использовать бинарный протокол только для при работе с prepared statements.
-
-- [https://dev.mysql.com/doc/internals/en/binary-protocol-value.html]
-- High Performance MySQL, O'Relly, page #225
-
-## Docker
-### Run on VPS/VDS (OpenVZ)
-Docker is only supported with OpenVZ 7 (based on 3.x kernel, [see](https://openvz.org/Docker_inside_CT_vz7)) or with OpenVZ 6 with kernel version 042stab105.4 or newer ([see](https://openvz.org/Docker_inside_CT)). ([From](https://stackoverflow.com/posts/35951482/revisions))
 
 # Data Processing
 
