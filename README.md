@@ -14,11 +14,12 @@
   - [Environment](#environment)
 - [Symfony Development](#symfony-development)
   - [Libraries](#libraries-1)
+- [JavaScript Development](#javascript-development)
+  - [Libraries](#libraries-2)
 - [Web Development](#web-development)
   - [JavaScript Compatibility Assurance](#javascript-compatibility-assurance)
   - [CSS Compatibility Assurance](#css-compatibility-assurance)
   - [Chrome DevTools](#chrome-devtools)
-  - [JavaScript Libraries](#javascript-libraries)
 - [Various Languages - Fast Start](#various-languages---fast-start)
   - [Go (Golang)](#go-golang)
   - [Java](#java)
@@ -158,20 +159,20 @@ appbundle:
 ## Libraries
 - [Incenteev/hashed-asset-bundle](https://github.com/Incenteev/hashed-asset-bundle) Apply an asset version based on a hash of the asset for symfony/asset
 
-# Web Development
-
-## JavaScript Libraries
+# JavaScript Development
+## Libraries
 [Clams.js](https://github.com/josephschmitt/Clamp.js) - Clamps an HTML element by adding ellipsis to it if the content inside is too long.
 
-### JavaScript Compatibility Assurance
+# Web Development
+## JavaScript Compatibility Assurance
 Each browser version implements a specific set of ECMAScript language features. Then you should provide compatible scripts to specific browsers set.
 
-#### Convert your scripts to older standards
+### Convert your scripts to older standards
 
-##### Transpiler
+#### Transpiler
 Takes the syntax that older browsers won’t understand (e.g. classes, ‘const’, arrow functions), and turns them into syntax they will understand (functions, ‘var’, functions).
 
-##### Babel Transpiler
+#### Babel Transpiler
 [Babel](https://babeljs.io/docs/en/usage) is the most famous and popular transpiler.
 ```
 # Install
@@ -181,24 +182,24 @@ npm install --save-dev @babel/core @babel/cli @babel/preset-env
 ```
 [@babel/preset-env preset](https://babeljs.io/docs/en/babel-preset-env) - most popular preset. Processes JS-scripts to achieve compatibility with a specified set of browsers (see the browserlist to specify set of browsers).
 
-#### Providing polyfills for unsupported browser features
-##### Polyfill
+### Providing polyfills for unsupported browser features
+#### Polyfill
 Polyfill is a workaround for the specific missed feature.
-###### [Loading Polyfills Only When Needed](https://philipwalton.com/articles/loading-polyfills-only-when-needed/)
+##### [Loading Polyfills Only When Needed](https://philipwalton.com/articles/loading-polyfills-only-when-needed/)
 The idea is to manually check and then dynamically load the polyfill.: ```if (!window.fetch) { loadScript('fetchPolyfill.js'); }```
 
-#### Useful
-##### Check you website for compatibility issues
+### Useful
+#### Check you website for compatibility issues
 - [SortSite](https://www.powermapper.com/products/sortsite/checks/browser-compatibility/).
-##### Notify users with non-supported browsers
+#### Notify users with non-supported browsers
 - [Obsolete Webpack Plugin](https://github.com/ElemeFE/obsolete-webpack-plugin)** generates a browser-side standalone script that detects browser compatibility based on Browserslist and prompts website users to upgrade it.
 
-### CSS Compatibility Assurance
+## CSS Compatibility Assurance
 
-#### Add missed CSS vendor prefixes suitable to required browsers set
+### Add missed CSS vendor prefixes suitable to required browsers set
 CSS vendor prefixes (CSS browser prefixes) are a way for browser makers to add support for new CSS features before those features are fully supported in all browsers. Therefore, to support previous versions of browsers, add prefixes to the style sheet that are suitable for the browsers you need.
 
-##### [Autoprefixer](https://github.com/postcss/autoprefixer)
+#### [Autoprefixer](https://github.com/postcss/autoprefixer)
 CSS postprocessor, adds the required vendor prefixes to your stylesheets.
 
 ## Chrome DevTools
