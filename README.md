@@ -15,6 +15,7 @@
 - [Symfony Development](#symfony-development)
   - [Libraries](#libraries-1)
 - [JavaScript Development](#javascript-development)
+  - [Language](#language-1)
   - [Libraries](#libraries-2)
 - [Web Development](#web-development)
   - [JavaScript Compatibility Assurance](#javascript-compatibility-assurance)
@@ -160,6 +161,8 @@ appbundle:
 - [Incenteev/hashed-asset-bundle](https://github.com/Incenteev/hashed-asset-bundle) Apply an asset version based on a hash of the asset for symfony/asset
 
 # JavaScript Development
+## Language
+
 ## Libraries
 [Clams.js](https://github.com/josephschmitt/Clamp.js) - Clamps an HTML element by adding ellipsis to it if the content inside is too long.
 
