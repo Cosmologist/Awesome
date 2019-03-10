@@ -73,7 +73,7 @@
 - Собрать образ из Dockerfile: ```docker build . --tag=cosmologist/my-app```
 - Запустить образ ```docker run cosmologist/my-app```
 - Запуск приложений внутри контейнера
-  - Зайти в unix-shell внутри контейнера ```docker run --interactive --tty /bin/bash```, кратко ```docker run -it /bin/bash```, для `alpine` где вместо *bash*->*ash* ```docker run -it /bin/ash```
+  - Зайти в unix-shell внутри контейнера ```docker run --interactive --tty cosmologist/my-app /bin/bash```, кратко ```docker run -it cosmologist/my-app /bin/bash```, для `alpine` где вместо *bash*->*ash* ```docker run -it cosmologist/my-app /bin/ash```
   
 #### Run on VPS/VDS (OpenVZ)
 Docker is only supported with OpenVZ 7 (based on 3.x kernel, [see](https://openvz.org/Docker_inside_CT_vz7)) or with OpenVZ 6 with kernel version 042stab105.4 or newer ([see](https://openvz.org/Docker_inside_CT)). ([From](https://stackoverflow.com/posts/35951482/revisions))
