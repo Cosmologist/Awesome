@@ -190,11 +190,12 @@ Takes the syntax that older browsers won’t understand (e.g. classes, ‘const�
 [Babel](https://babeljs.io/docs/en/usage) is the most famous and popular transpiler.
 ```
 # Install
-npm install --save-dev @babel/core @babel/cli @babel/preset-env
+npm install @babel/core @babel/cli @babel/preset-env
+
 # Run via CLI
 ./node_modules/.bin/babel web/js/your-file.js --out-file script-compiled.js --presets=@babel/env
 ```
-[@babel/preset-env preset](https://babeljs.io/docs/en/babel-preset-env) - most popular preset. Processes JS-scripts to achieve compatibility with a specified set of browsers (see the browserlist to specify set of browsers).
+[@babel/preset-env](https://babeljs.io/docs/en/babel-preset-env) - most popular preset. Processes JS-scripts to achieve compatibility with a specified set of browsers (see the browserlist to specify set of browsers).
 
 ### Providing polyfills for unsupported browser features
 #### Polyfill
