@@ -354,6 +354,7 @@ Cпециальные символы, встраиваемые в текстов
 - [htop](https://www.systutorials.com/docs/linux/man/1-htop/) #tui #linux Приложение для просмотра и управления запущенными процессами, c интуитивным интерфейсом и с большим количеством возможностей.
 - [strace](workspace/strace.md) is Linux utility to monitor and tamper with interactions between processes and the Linux kernel (system calls, signal deliveries, and changes of process state).
 - [Midnight Commander](workspace/midnight-commander.md) is a powerfult text user-interface file manager.
+- [FPrint](https://fprint.freedesktop.org/) поддержка сканеров отпечатков пальцев. Можно использовать для входа в систему, использовать сканер для `sudo` в Linux (не забудьте подключить PAM-модуль `sudo pam-auth-update`) и тп.
 
 ## Software
 ### Telephony
