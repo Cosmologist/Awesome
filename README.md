@@ -16,7 +16,7 @@
 - [Symfony Development](#symfony-development)
   - [Libraries](#libraries-1)
 - [JavaScript Development](#javascript-development)
-  - [Language](#language-1)
+  - [JQuery](#jquery)
   - [Libraries](#libraries-2)
 - [Web Development](#web-development)
   - [JavaScript Compatibility Assurance](#javascript-compatibility-assurance)
@@ -179,10 +179,11 @@ appbundle:
 - [Incenteev/hashed-asset-bundle](https://github.com/Incenteev/hashed-asset-bundle) Apply an asset version based on a hash of the asset for symfony/asset
 
 # JavaScript Development
-## Language
+## JQuery
+- http://youmightnotneedjquery.com/
 
 ## Libraries
-[Clams.js](https://github.com/josephschmitt/Clamp.js) - Clamps an HTML element by adding ellipsis to it if the content inside is too long.
+- https://github.com/josephschmitt/Clamp.js
 
 # Web Development
 ## JavaScript Compatibility Assurance
