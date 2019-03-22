@@ -165,7 +165,7 @@ $pdo->setAttribute(PDO::ATTR_STRINGIFY_FETCHES, false);
 
 # Symfony Development
 ## Resources
-- https://github.com/sitepoint-editors/awesome-symfony/blob/master/README.md#forms
+- https://github.com/sitepoint-editors/awesome-symfony
 ## Framework
 ### Multiline text in the .yml
 ```yaml
