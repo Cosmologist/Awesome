@@ -178,7 +178,7 @@ appbundle:
 # will parsed as "This is a multiline text"
 ```
 ## Libraries
-- [Incenteev/hashed-asset-bundle](https://github.com/Incenteev/hashed-asset-bundle) Apply an asset version based on a hash of the asset for symfony/asset
+- Assets: Автоматическая генерация версии ассетов (assets_version) по хэшу от содержимого. По-умолчанию Symfony подразумевает ручную проставку версии. [Incenteev/hashed-asset-bundle](https://github.com/Incenteev/hashed-asset-bundle)
 
 ### Правильная реализация поля типа File для Symfony Form [VRiaEnhancedFileBundle](https://github.com/vria/enhanced-file)
 Стандартный тип FileType имеет только одну возможность - замаппить загруженный файл в соответствующее поле объекта в виде UploadedFile, любые остальные действия с файлом предлагается релизовывать вручную для каждой формы.
