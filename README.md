@@ -178,6 +178,15 @@ appbundle:
 ## Libraries
 - [Incenteev/hashed-asset-bundle](https://github.com/Incenteev/hashed-asset-bundle) Apply an asset version based on a hash of the asset for symfony/asset
 
+### Правильная реализация поля типа File для Symfony Form [VRiaEnhancedFileBundle](https://github.com/vria/enhanced-file)
+Стандартный тип FileType имеет только одну возможность - замаппить загруженный файл в соответствующее поле объекта в виде UploadedFile, любые остальные действия с файлом предлагается релизовывать вручную для каждой формы.
+
+Что должно было быть, как минимум:
+- Автоматическое сохранение файла в отведенное место, с возможностью конфигурации
+- Обработка файлов при update из коробки (причем, этот процесс не описан ни в документации ни где либо еще, с учетом того, что он совсем не очень прозрачный и требует углубленных знаний Symfony Forms).
+
+В [VRiaEnhancedFileBundle](https://github.com/vria/enhanced-file) это решено, а также у них есть [отличная статья](https://vria.eu/news/2016/4/10/creating-enhanced-file-type-for-symfony-forms) на эту тему.
+
 # JavaScript Development
 ## JQuery
 - http://youmightnotneedjquery.com/
