@@ -236,13 +236,16 @@ CSS vendor prefixes (CSS browser prefixes) are a way for browser makers to add s
 #### [Autoprefixer](https://github.com/postcss/autoprefixer)
 CSS postprocessor, adds the required vendor prefixes to your stylesheets.
 
-## Chrome DevTools
+## Инструменты
 
-### Отображение вспомогательных линий разметки у элементов
+### Показать вспомогательные линии разметки у элементов [Chrome DevTools]
 *Settings -> Elements -> Show Rulers*
 
-### Найти оригинальный обработчик событий элемента (установленного через JQuery)
-К примеру, c помощью расширения [JQuery Audit](https://chrome.google.com/webstore/detail/jquery-audit/dhhnpbajdcgdmbbcoakfhmfgmemlncjg). *(Так как подписан на событие именно JQuery)*. 
+### Найти оригинальный обработчик событий элемента (установленный через JQuery)
+[JQuery Audit](https://chrome.google.com/webstore/detail/jquery-audit/dhhnpbajdcgdmbbcoakfhmfgmemlncjg).
+
+### Анализ производительности страницы сайта
+[https://www.webpagetest.org/](https://www.webpagetest.org/)
 
 ## Various Languages - Fast Start
 
