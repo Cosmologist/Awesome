@@ -348,8 +348,15 @@ This is a python wrapper around Google's [WebRTC](https://webrtc.org/) VAD code.
 ### How To
 
 #### Какие порты доступны для исходящих соединений
-Проверить доступ к порту можно следующим образом: `telnet portquiz.net 80` ([portquiz.net](portquiz.net) - публичный сервер на котором открыты все TCP-порты).  
-Получить список всех портов можно с помощью nmap: `nmap IP` или только по первым 100 списка популярных портов `nmap --top-ports 100 portquiz.net`
+Можно с помощью сервера [portquiz.net](portquiz.net), у которого специально для этого открыты все TCP-порты.
+- проверить конкретный порт: `telnet portquiz.net 80`
+- проверить все порты: `nmap portquiz.net`
+- проверить 100 популярных портов: `nmap --top-ports 100 portquiz.net`
+
+#### Найти процесс который слушает определенный порт [Windows][PowerShell]
+```bash
+Get-Process -Id (Get-NetTCPConnection -LocalPort portNumber).OwningProcess
+```
 
 # Workspace
 
