@@ -382,6 +382,12 @@ Cпециальные символы, встраиваемые в текстов
 - [strace](workspace/strace.md) is Linux utility to monitor and tamper with interactions between processes and the Linux kernel (system calls, signal deliveries, and changes of process state).
 - [Midnight Commander](workspace/midnight-commander.md) is a powerfult text user-interface file manager.
 
+#### PuTTY/KiTTY
+##### Не закрывать соединение/туннелирование
+По-умолчанию, если не пользоваться терминалом, соединение закрывается через некоторое время, если вернуться в терминал и нажать любую клавишу, то соединение автоматически восстановится. Особенно это неудобно при долговременных туннелях.
+`Connection -> "Sending of null packets to keep session active" -> "Seconds between keepalives" укажите значение `240`, например.
+
+
 #### Misc
 - [FPrint](https://fprint.freedesktop.org/) для работы со сканером отпечатков пальцев. Например, по отпечатку можно входить в систему или использовать его вместо пароля для `sudo` (в Linux) (не забудьте подключить PAM-модуль `sudo pam-auth-update`) и тп.
 
