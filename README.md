@@ -353,10 +353,13 @@ This is a python wrapper around Google's [WebRTC](https://webrtc.org/) VAD code.
 - проверить все порты: `nmap portquiz.net`
 - проверить 100 популярных портов: `nmap --top-ports 100 portquiz.net`
 
-#### Найти процесс который слушает определенный порт [Windows][PowerShell]
+#### Найти процесс который слушает определенный порт [Windows]
+##### PowerShell
 ```powershell
 Get-Process -Id (Get-NetTCPConnection -LocalPort portNumber).OwningProcess
 ```
+##### Resource Monitor
+`Win+r` and `resmon`
 
 # Workspace
 
