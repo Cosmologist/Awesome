@@ -33,6 +33,7 @@
   - [Network](#network)
 - [Workspace](#workspace)
   - [System](#system)
+    - [User Management](#user-management)
   - [System: Terminal](#terminal)
   - [System: Utilities](#utilities)
   - [Software](#software)
@@ -370,6 +371,7 @@ Get-Process -Id (Get-NetTCPConnection -LocalPort portNumber).OwningProcess
 - Список всех групп `cat /etc/group | sort` в формате `<имя группы>:<пароль>:<ID группы (gid)>:<пользователи состоящие в группе>`
 - Добавить пользователя в группу `adduser <user> <group>`
 - Удалить пользователя из группы `deluser <user> <group>`
+- Список групп процесса `ps -o supgid,supgrp -p <pid>`
 
 ### Terminal
 #### Управляющие символы ANSI (ANSI escape code)
