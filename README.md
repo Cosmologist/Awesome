@@ -367,6 +367,7 @@ Get-Process -Id (Get-NetTCPConnection -LocalPort portNumber).OwningProcess
 
 ### User Management
 #### CheatSheet
+- Список всех групп `cat /etc/group | sort` (`<имя группы>:<пароль>:<ID группы (gid)>:<пользователи состоящие в группе>`)
 - Добавить пользователя в группу `useradd -g <group> <user>`
 - Удалить пользователя из группы `deluser <user> <group>`
 
