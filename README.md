@@ -365,6 +365,12 @@ Get-Process -Id (Get-NetTCPConnection -LocalPort portNumber).OwningProcess
 
 ## System
 
+### User Management
+- https://www.cyberciti.biz/faq/howto-linux-add-user-to-group/
+#### CheatSheet
+- Добавить пользователя в группу `useradd -g <group> <user>`
+- Удалить пользователя из группы `deluser <user> <group>`
+
 ### Terminal
 #### Управляющие символы ANSI (ANSI escape code)
 Cпециальные символы, встраиваемые в текстовый вывод (stdout) приложения, для форматирования содержимого (цвет, форматирование) или для взаимодействия с пользователем или другими процессами
@@ -382,11 +388,10 @@ Cпециальные символы, встраиваемые в текстов
 - [strace](workspace/strace.md) is Linux utility to monitor and tamper with interactions between processes and the Linux kernel (system calls, signal deliveries, and changes of process state).
 - [Midnight Commander](workspace/midnight-commander.md) is a powerfult text user-interface file manager.
 
-#### PuTTY/KiTTY
+#### PuTTY/KiTTY [Windows]
 ##### Не закрывать соединение/туннелирование
 По-умолчанию, если не пользоваться терминалом, соединение закрывается через некоторое время, если вернуться в терминал и нажать любую клавишу, то соединение автоматически восстановится. Это неудобно при долговременных туннелях.  
-`Connection -> "Sending of null packets to keep session active" -> "Seconds between keepalives" укажите значение `240`, например.
-
+`Connection -> "Sending of null packets to keep session active" -> "Seconds between keepalives"` укажите значение `240`, например.
 
 #### Misc
 - [FPrint](https://fprint.freedesktop.org/) для работы со сканером отпечатков пальцев. Например, по отпечатку можно входить в систему или использовать его вместо пароля для `sudo` (в Linux) (не забудьте подключить PAM-модуль `sudo pam-auth-update`) и тп.
