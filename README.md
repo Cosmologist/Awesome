@@ -366,7 +366,6 @@ Get-Process -Id (Get-NetTCPConnection -LocalPort portNumber).OwningProcess
 ## System
 
 ### User Management
-- https://www.cyberciti.biz/faq/howto-linux-add-user-to-group/
 #### CheatSheet
 - Добавить пользователя в группу `useradd -g <group> <user>`
 - Удалить пользователя из группы `deluser <user> <group>`
