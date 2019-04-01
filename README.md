@@ -126,6 +126,7 @@ Links:
 - [marcelgsantos/learning-oop-in-php](https://github.com/marcelgsantos/learning-oop-in-php) A collection of resources to learn object-oriented programming and related concepts for PHP developers.
 
 ## Libraries
+- [K-Phoen/rulerz](https://github.com/K-Phoen/rulerz) Powerful implementation of the Specification pattern in PHP
 - [nette/utils](https://github.com/nette/utils) Lightweight utilities for string & array manipulation, image handling, safe JSON encoding/decoding, validation, slug or strong password generating etc
 - [danielstjules/Stringy](https://github.com/danielstjules/Stringy) A PHP string manipulation library with multibyte support
 
