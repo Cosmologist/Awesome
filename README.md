@@ -89,6 +89,8 @@ git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Crese
 #### IntelliJ Jetbrains
 - Показывать `.dot`-файлы и директории в навигаторе `Preferences | File Types | Ignore files and folders`
 - Показывать директорию `.idea` в навигаторе `Maintenance (Ctrl+Shift+Alt+/) | Registry | projectView.hide.dot.idea` + перезапуск Idea
+- [Как хранить настройки IDE в репозитории вместе с проектом](https://intellij-support.jetbrains.com/hc/en-us/articles/206544839)
+  - [Jetbrains.gitignore](https://github.com/github/gitignore/blob/master/Global/JetBrains.gitignore)
 
 ## Misc
 
