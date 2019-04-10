@@ -203,7 +203,7 @@ appbundle:
 ## Javascript
 
 ## Производительность
-- [Google Lighthouse](https://developers.google.com/web/tools/lighthouse/) инструмент для аудита производительности (и не только). Доступен как расширение для Chrome, в виде cli-приложения для NodeJs и как сервис [Google PageSpeed Insights][https://developers.google.com/speed/pagespeed/insights/]
+- [Google Lighthouse](https://developers.google.com/web/tools/lighthouse/) инструмент для аудита производительности (и не только). Доступен как расширение для Chrome, в виде cli-приложения для NodeJs и как сервис [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/).
 
 ### Обеспечение совместимости с браузерами
 #### Конвертировать код с помощью транспилера. 
