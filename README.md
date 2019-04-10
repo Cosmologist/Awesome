@@ -200,8 +200,10 @@ appbundle:
 - https://github.com/josephschmitt/Clamp.js
 
 # Web Development
-## JavaScript Compatibility Assurance
-Each browser version implements a specific set of ECMAScript language features. Then you should provide compatible scripts to specific browsers set.
+## Javascript
+
+### Как обеспечить совместимость с разными браузерами
+- Конвертировать код с помощью **транспилера**. **Транспилер** перегенирирует код с использованием фиксированного набора языковых конструкций. Этот набор определяется как пересечение поддерживаемых возможностей стандарта ECMAScript между всеми браузерами, для которых требуется обеспечить совместимость.
 
 ### Convert your scripts to older standards
 
