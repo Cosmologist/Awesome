@@ -202,15 +202,14 @@ appbundle:
 # Web Development
 ## Javascript
 
-### Как обеспечить совместимость с разными браузерами
-- Конвертировать код с помощью **транспилера**. **Транспилер** перегенирирует код с использованием фиксированного набора языковых конструкций. Этот набор определяется как пересечение поддерживаемых возможностей стандарта ECMAScript между всеми браузерами, для которых требуется обеспечить совместимость.
+## Производительность
+- [Google Lighthouse](https://developers.google.com/web/tools/lighthouse/) инструмент для аудита производительности (и не только). Доступен как расширение для Chrome, в виде cli-приложения для NodeJs и как сервис [Google PageSpeed Insights][https://developers.google.com/speed/pagespeed/insights/]
 
-### Convert your scripts to older standards
+### Обеспечение совместимости с браузерами
+#### Конвертировать код с помощью транспилера. 
+**Транспилер** перегенирирует код с использованием только фиксированного набора языковых конструкций, поддержка которых есть в каждом бразуре, в котором приложение должно работать.
 
-#### Transpiler
-Takes the syntax that older browsers won’t understand (e.g. classes, ‘const’, arrow functions), and turns them into syntax they will understand (functions, ‘var’, functions).
-
-#### Babel Transpiler
+##### Babel Transpiler
 [Babel](https://babeljs.io/docs/en/usage) is the most famous and popular transpiler.
 ```
 # Install
@@ -221,16 +220,16 @@ npm install @babel/core @babel/cli @babel/preset-env
 ```
 [@babel/preset-env](https://babeljs.io/docs/en/babel-preset-env) - most popular preset. Processes JS-scripts to achieve compatibility with a specified set of browsers (see the browserlist to specify set of browsers).
 
-### Providing polyfills for unsupported browser features
-#### Polyfill
+#### Providing polyfills for unsupported browser features
+##### Polyfill
 Polyfill is a workaround for the specific missed feature.
-##### [Loading Polyfills Only When Needed](https://philipwalton.com/articles/loading-polyfills-only-when-needed/)
+###### [Loading Polyfills Only When Needed](https://philipwalton.com/articles/loading-polyfills-only-when-needed/)
 The idea is to manually check and then dynamically load the polyfill.: ```if (!window.fetch) { loadScript('fetchPolyfill.js'); }```
 
-### Useful
-#### Check you website for compatibility issues
+#### Useful
+##### Check you website for compatibility issues
 - [SortSite](https://www.powermapper.com/products/sortsite/checks/browser-compatibility/).
-#### Notify users with non-supported browsers
+##### Notify users with non-supported browsers
 - [Obsolete Webpack Plugin](https://github.com/ElemeFE/obsolete-webpack-plugin)** generates a browser-side standalone script that detects browser compatibility based on Browserslist and prompts website users to upgrade it.
 
 ## CSS Compatibility Assurance
