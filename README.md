@@ -209,7 +209,17 @@ appbundle:
 ## Производительность
 ### Resources
 - https://developers.google.com/web/fundamentals/performance/why-performance-matters/
+- https://bitsofco.de/understanding-the-critical-rendering-path/
 - https://m.habr.com/ru/company/badoo/blog/322988/
+
+### Critical Rendering Path (CRP)
+Это набор действий совершаемых браузером до старта отрисовки страницы на экране
+> 1. Constructing the DOM Tree
+> 2. Constructing the CSSOM Tree
+> 3. Running JavaScript
+> 4. Creating the Render Tree
+> 5. Generating the Layout
+> 5. Painting
 
 ### Анализ производительности
 - [Google Lighthouse](https://developers.google.com/web/tools/lighthouse/) для аудита производительности. Доступен как расширение для Chrome, в виде cli-приложения, как модуль для Node и как часть сервиса [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/).
