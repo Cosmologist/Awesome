@@ -212,7 +212,7 @@ appbundle:
 - https://m.habr.com/ru/company/badoo/blog/322988/
 
 ### Анализ производительности
-- [Google Lighthouse](https://developers.google.com/web/tools/lighthouse/) для аудита производительности. Доступен как расширение для Chrome, в виде cli-приложения, как модуль для Node и внутри сервиса [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/).
+- [Google Lighthouse](https://developers.google.com/web/tools/lighthouse/) для аудита производительности. Доступен как расширение для Chrome, в виде cli-приложения, как модуль для Node и как часть сервиса [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/).
 
 ### Метрики
 ### Скорость рендеринга страницы
