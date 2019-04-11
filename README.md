@@ -225,12 +225,12 @@ appbundle:
 - [Google Lighthouse](https://developers.google.com/web/tools/lighthouse/) для аудита производительности. Доступен как расширение для Chrome, в виде cli-приложения, как модуль для Node и как часть сервиса [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/).
 
 ### Как увеличить производительность
-- Загружать внешние асинхронно с помощью добавления аттрибута *defer*  в тег *script* - не блокируется парсинг *DOM*, быстрее чем синхронный режим.
+- Загружать внешние скрипты асинхронно с помощью добавления аттрибута *defer*  в тег *script* - не блокируется парсинг *DOM*, быстрее чем синхронный режим.
 
 #### JavaScript Blocking
 
 ##### Resources
-- https://flaviocopes.com/javascript-async-defer/#blocking-parsing
+- https://flaviocopes.com/javascript-async-defer/
 
 ##### Как JavaScript блокирует парсинг страницы
 > Браузер формирует узлы DOM/ CSSOM до тех пор, пока не встретит внешние или внутренние скрипты JavaScript.
