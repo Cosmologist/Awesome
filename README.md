@@ -200,11 +200,19 @@ appbundle:
 - https://github.com/josephschmitt/Clamp.js
 
 # Web Development
+
+## Resources
+- [Web Fundamentals](https://developers.google.com/web/fundamentals/) Google's opinionated reference for building amazing web experiences.
+
 ## Javascript
 
 ## Производительность
+### Resources
+- https://developers.google.com/web/fundamentals/performance/why-performance-matters/
+- https://m.habr.com/ru/company/badoo/blog/322988/
+
 ### Анализ производительности
-- [Google Lighthouse](https://developers.google.com/web/tools/lighthouse/) для аудита производительности. Доступен как расширение для Chrome, в виде cli-приложения для NodeJs и внутри сервиса [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/).
+- [Google Lighthouse](https://developers.google.com/web/tools/lighthouse/) для аудита производительности. Доступен как расширение для Chrome, в виде cli-приложения, как модуль для Node и внутри сервиса [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/).
 
 ### Метрики
 ### Скорость рендеринга страницы
