@@ -190,15 +190,7 @@ $mailboxRegistryDef->addMethodCall('add', [$name, $options]);
 
 ## Libraries
 - **Asset**: Автоматическая генерация версии ассетов (*assets_version*) по хэшу от содержимого. По-умолчанию Symfony предлагает только ручное изменение версии. [Incenteev/hashed-asset-bundle](https://github.com/Incenteev/hashed-asset-bundle)
-
-### Правильная реализация поля типа File для Symfony Form [VRiaEnhancedFileBundle](https://github.com/vria/enhanced-file)
-Стандартный тип FileType имеет только одну возможность - замаппить загруженный файл в соответствующее поле объекта в виде UploadedFile, любые остальные действия с файлом предлагается релизовывать вручную для каждой формы.
-
-Что должно было быть, как минимум:
-- Автоматическое сохранение файла в отведенное место, с возможностью конфигурации
-- Обработка файлов при update из коробки (причем, этот процесс не описан ни в документации ни где либо еще, с учетом того, что он совсем не очень прозрачный и требует углубленных знаний Symfony Forms).
-
-В [VRiaEnhancedFileBundle](https://github.com/vria/enhanced-file) это решено, а также у них есть [отличная статья](https://vria.eu/news/2016/4/10/creating-enhanced-file-type-for-symfony-forms) на эту тему.
+- [VRiaEnhancedFileBundle](https://github.com/vria/enhanced-file) замена стандартного Symfony Form FileType, с поддержкой режима *Update* и автоматической загрузкой. Стандартный FileType этого не умеет, а в документации этот момент не освещен, не смотря на то, что он не прозрачный и требует знаний Symfony Form internals.  Автора бандла написал [отличную статью](https://vria.eu/news/2016/4/10/creating-enhanced-file-type-for-symfony-forms) на эту тему.
 
 # JavaScript Development
 ## JQuery
