@@ -166,11 +166,11 @@ $pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
 $pdo->setAttribute(PDO::ATTR_STRINGIFY_FETCHES, false);
 ```
 
-# Symfony Development
+# Symfony Framework
 ## Resources
 - https://github.com/sitepoint-editors/awesome-symfony
-## Framework
-### Multiline text in the .yml
+## Recipes
+### Как ввести многострочный текст в YAML-файле
 ```yaml
 # app/config/config.yml
 appbundle:
@@ -178,8 +178,16 @@ appbundle:
     description: > 
                    This is a 
                    multiline text
-# will parsed as "This is a multiline text"
 ```
+
+### Как получить definition сервиса из Extension с включенным autowire
+До Symfony 3.3 сервисы загружались вручную (```$loader->load('services.yml');``` и попадали сразу в контейнер, с включенным autowire этого не происходит и это логично, при попытке получить definition *$containerBuilder->getDefinition('myservice')* будет возникать ошибка вида *"You have requested a non-existent service"*. 
+Если надо обратиться к definition сервиса, к примеру, чтобы вызвать *addMethodCall*, надо у ContainerBuilder вызвать метод *register*.
+```php
+$mailboxRegistryDef = $container->register(MailboxRegistry::class);
+$mailboxRegistryDef->addMethodCall('add', [$name, $options]);
+```
+
 ## Libraries
 - **Asset**: Автоматическая генерация версии ассетов (*assets_version*) по хэшу от содержимого. По-умолчанию Symfony предлагает только ручное изменение версии. [Incenteev/hashed-asset-bundle](https://github.com/Incenteev/hashed-asset-bundle)
 
