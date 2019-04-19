@@ -9,20 +9,13 @@
     - [IDE: IntelliJ Jetbrains](#intellij-jetbrains)
   - [Misc](#misc)
 - [PHP Development](#php-development)
-  - [Language](#language)
-  - [Resources](#resources-1)
-  - [Libraries](#libraries)
-  - [Environment](#environment)
-- [Symfony Development](#symfony-development)
-  - [Libraries](#libraries-1)
+  - [Symfony Framework](#symfony-framework)
 - [JavaScript Development](#javascript-development)
-  - [JQuery](#jquery)
-  - [Libraries](#libraries-2)
 - [Web Development](#web-development)
   - [JavaScript Compatibility Assurance](#javascript-compatibility-assurance)
   - [CSS Compatibility Assurance](#css-compatibility-assurance)
   - [Chrome DevTools](#chrome-devtools)
-- [Various Languages - Fast Start](#various-languages---fast-start)
+- [Multilingual development: Fast dive](#multilingual-development--fast-dive)
   - [Go (Golang)](#go-golang)
   - [Java](#java)
   - [Python](#python)
@@ -134,7 +127,7 @@ Links:
 ## Environment
 
 ### Debug
-#### Trigger breakpoint for all exceptions [PhpStorm]
+#### Trigger breakpoint for all exceptions [PhpStorm]h
 *Run -> View Breakpoints -> Add (PHP Exception Breakpoints) -> Enter Exception FQCN "Exception"*
 ![Catch the global exception](https://github.com/Cosmologist/Awesome/blob/master/images/phpstorm-global-exception-breakpoint.png?raw=true)
 
@@ -305,7 +298,7 @@ CSS postprocessor, adds the required vendor prefixes to your stylesheets.
 ### Анализ производительности страницы сайта
 [https://www.webpagetest.org/](https://www.webpagetest.org/)
 
-## Various Languages - Fast Start
+## Multilingual development: Fast dive
 
 ### Go (Golang)
 #### Most Simplified Program
