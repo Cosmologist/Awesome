@@ -162,6 +162,7 @@ $pdo->setAttribute(PDO::ATTR_STRINGIFY_FETCHES, false);
 # Symfony Framework
 ## Resources
 - https://github.com/sitepoint-editors/awesome-symfony
+
 ## Recipes
 ### Как ввести многострочный текст в YAML-файле
 ```yaml
@@ -185,6 +186,15 @@ $mailboxRegistryDef->addMethodCall('add', [$name, $options]);
 ```php
 # DependencyInjection\AppExtension.php
 $container->registerForAutoconfiguration(FooInterface::class)->addTag('foo.bar');
+```
+или
+```yml
+# services.yml
+services:
+  _instanceof:
+    App\Foo\FooInterface:
+      tags: ['foo.bar']
+      public: false
 ```
 
 ## Libraries
