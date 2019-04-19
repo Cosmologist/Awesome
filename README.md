@@ -188,6 +188,12 @@ $mailboxRegistryDef = $container->register(MailboxRegistry::class);
 $mailboxRegistryDef->addMethodCall('add', [$name, $options]);
 ```
 
+### Как добавить свой тег для autoconfigure
+```php
+# DependencyInjection\AppExtension.php
+$container->registerForAutoconfiguration(FooInterface::class)->addTag('foo.bar');
+```
+
 ## Libraries
 - **Asset**: Автоматическая генерация версии ассетов (*assets_version*) по хэшу от содержимого. По-умолчанию Symfony предлагает только ручное изменение версии. [Incenteev/hashed-asset-bundle](https://github.com/Incenteev/hashed-asset-bundle)
 - [VRiaEnhancedFileBundle](https://github.com/vria/enhanced-file) замена стандартного Symfony Form FileType, с поддержкой режима *Update* и автоматической загрузкой. Стандартный FileType этого не умеет, а в документации этот момент не освещен, не смотря на то, что он не прозрачный и требует знаний Symfony Form internals.  Автора бандла написал [отличную статью](https://vria.eu/news/2016/4/10/creating-enhanced-file-type-for-symfony-forms) на эту тему.
