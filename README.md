@@ -194,7 +194,6 @@ services:
   _instanceof:
     App\Foo\FooInterface:
       tags: ['foo.bar']
-      public: false
 ```
 
 ## Libraries
