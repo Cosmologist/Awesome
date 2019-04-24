@@ -7,6 +7,8 @@
     - [Docker](#docker)
     - [Git](#git)
     - [IDE: IntelliJ Jetbrains](#intellij-jetbrains)
+    - [Web Server](#web-server)
+      - [Nginx](#nginx)
   - [Misc](#misc)
 - [PHP Development](#php-development)
   - [Symfony Framework](#symfony-framework)
@@ -84,6 +86,9 @@ git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Crese
 - Показывать директорию `.idea` в навигаторе `Maintenance (Ctrl+Shift+Alt+/) | Registry | projectView.hide.dot.idea` + перезапуск Idea
 - [Как хранить настройки IDE в репозитории вместе с проектом](https://intellij-support.jetbrains.com/hc/en-us/articles/206544839)
   - [Jetbrains.gitignore](https://github.com/github/gitignore/blob/master/Global/JetBrains.gitignore)
+  
+### Web Server
+- [Online HTTP/2 test - Verify if your server or CDN supports HTTP/2](https://tools.keycdn.com/http2-test)
 
 ## Misc
 
