@@ -87,6 +87,7 @@ git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Crese
 - [Как хранить настройки IDE в репозитории вместе с проектом](https://intellij-support.jetbrains.com/hc/en-us/articles/206544839)
   - [Jetbrains.gitignore](https://github.com/github/gitignore/blob/master/Global/JetBrains.gitignore)
  - [Script to reset PHPStorm trial (evaluation) on windows machine](https://gist.github.com/midlan/6a08db14569c409c9c2b9ecb548380f6)
+ - [Reset Webstorm/Phpstorm trial on Linux (Ubuntu)](https://gist.github.com/bTokman/620c0f6b541b00c2835c18319bc0963d) - [Важный комментарий](https://gist.github.com/bTokman/620c0f6b541b00c2835c18319bc0963d#gistcomment-2892793)
   
 ### Web Server
 - [Online HTTP/2 test - Verify if your server or CDN supports HTTP/2](https://tools.keycdn.com/http2-test)
