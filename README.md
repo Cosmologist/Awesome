@@ -50,7 +50,8 @@
 > [I know of no advantages to storing data I want to keep for a long time outside of a database.](https://asktom.oracle.com/pls/apex/f?p=100:11:0%3A%3A%3A%3AP11_QUESTION_ID:1011065100346196442) If it is in the database. I can be sure it is professionally managed, backed up, recoverable (with the rest of the data), secured, scalable (try putting 100,000 documents in a single directory, now, put them in table - which one 'scales' - it is not the directory). I can undelete (flashback) easily. I have locking. I have read consistency.
 
 ### Database: MySQL
-[MySQL Workbench](https://www.mysql.com/products/workbench/) The best UI-solution to MySQL administration! And a good data management solution.
+- [MySQL Workbench](https://www.mysql.com/products/workbench/) The best UI-solution to MySQL administration! And a good data management solution.
+- [How the LOAD_FILE() Function Works in MySQL](https://database.guide/how-the-load_file-function-works-in-mysql/) Полезно если LOAD_FILE не работает (возвращает `NULL` вместо содержимого)
 
 #### Текстовый и бинарный протоколы
 Текстовый протокол оперирует текстовыми данными, бинарный текстовыми и числовыми.  
