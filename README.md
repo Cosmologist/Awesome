@@ -7,6 +7,7 @@
     - [Docker](#docker)
     - [Git](#git)
     - [IDE: IntelliJ Jetbrains](#intellij-jetbrains)
+    - [Search: Sphinx](#search-sphinx)
     - [Web Server](#web-server)
       - [Nginx](#nginx)
   - [Misc](#misc)
@@ -88,6 +89,9 @@ Docker is only supported with OpenVZ 7 (based on 3.x kernel, [see](https://openv
   - [Jetbrains.gitignore](https://github.com/github/gitignore/blob/master/Global/JetBrains.gitignore)
  - [Script to reset PHPStorm trial (evaluation) on windows machine](https://gist.github.com/midlan/6a08db14569c409c9c2b9ecb548380f6)
  - [Reset Webstorm/Phpstorm trial on Linux (Ubuntu)](https://gist.github.com/bTokman/620c0f6b541b00c2835c18319bc0963d) - [Важный комментарий](https://gist.github.com/bTokman/620c0f6b541b00c2835c18319bc0963d#gistcomment-2892793)
+ 
+### Search: Sphinx
+- При обращении к Sphinx через SphinxQl необходимо дополнительно экранировать ряд символов (не входят в стандарт SQL, используются в `Extended Syntax` для Sphinx) в строковых параметрах, иначе может привести к SQL-инъекции, невалидному запросу (ошибка вида `Unexpected character '/'`) и тп. [Обсуждение](http://sphinxsearch.com/forum/view.html?id=13619#57465), [Реализация для PHP](https://github.com/romainneutron/Sphinx-Search-API-PHP-Client/blob/master/sphinxapi.php#L1511)
   
 ### Web Server
 - [Online HTTP/2 test - Verify if your server or CDN supports HTTP/2](https://tools.keycdn.com/http2-test)
