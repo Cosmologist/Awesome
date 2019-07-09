@@ -429,6 +429,9 @@ This is a python wrapper around Google's [WebRTC](https://webrtc.org/) VAD code.
 ```powershell
 Get-Process -Id (Get-NetTCPConnection -LocalPort portNumber).OwningProcess
 ```
+##### Resource Monitor
+`Win+r` and `resmon`
+
 #### Создать точку доступа Wi-Fi [Windows]
 ```cmd
 # Проверяем что установленный WiFi адаптер имееттакую возможность
@@ -444,9 +447,6 @@ netsh wlan start hostednetwork
 # Затем сеть можно отключить
 netsh wlan stop hostednetwork
 ```
-
-##### Resource Monitor
-`Win+r` and `resmon`
 
 # Workspace
 
