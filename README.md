@@ -429,6 +429,22 @@ This is a python wrapper around Google's [WebRTC](https://webrtc.org/) VAD code.
 ```powershell
 Get-Process -Id (Get-NetTCPConnection -LocalPort portNumber).OwningProcess
 ```
+#### Создать точку доступа Wi-Fi [Windows]
+```cmd
+# Проверяем что установленный WiFi адаптер имееттакую возможность
+# Параметр "Поддержка размещенной сети / Hosted Network Supported" должен быть Да/Yes
+netsh wlan show drivers
+
+# Определяем сеть
+netsh wlan set hostednetwork mode=allow ssid=test key=999999999
+
+# Запускаем сеть
+netsh wlan start hostednetwork
+
+# Затем сеть можно отключить
+netsh wlan stop hostednetwork
+```
+
 ##### Resource Monitor
 `Win+r` and `resmon`
 
