@@ -134,6 +134,7 @@ Links:
 - [K-Phoen/rulerz](https://github.com/K-Phoen/rulerz) Powerful implementation of the Specification pattern in PHP
 - [nette/utils](https://github.com/nette/utils) Lightweight utilities for string & array manipulation, image handling, safe JSON encoding/decoding, validation, slug or strong password generating etc
 - [danielstjules/Stringy](https://github.com/danielstjules/Stringy) A PHP string manipulation library with multibyte support
+- [wapmorgan/Morphos](https://github.com/wapmorgan/Morphos) Морфологическая библиотека для английского и русского языков. Умеет склонять, делать плюрализацию (склонение множественного), конвертировать значения в текст (валюта, числа, временные интервалы), подбирать предлоги и окончания
 
 ## Environment
 
