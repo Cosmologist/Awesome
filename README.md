@@ -78,7 +78,7 @@ Docker is only supported with OpenVZ 7 (based on 3.x kernel, [see](https://openv
 
 ### Git
 - [Pretty git log](http://garmoncheg.blogspot.com/2012/06/pretty-git-log.html)
-- [Как удалить из репозитория файлы которые больше не надо трекать (к примеру после измений в .gitignore)](http://www.codeblocq.com/2016/01/Untrack-files-already-added-to-git-repository-based-on-gitignore/)
+- [Как удалить из репозитория файлы которые больше не надо трекать (к примеру после измений в .gitignore)](http://www.codeblocq.com/2016/01/Untrack-files-already-added-to-git-repository-based-on-gitignore/): `git rm -r --cached . && git add . && git commit -m ".gitignore fix"`
 
 
 ### IDE
